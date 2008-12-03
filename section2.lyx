@@ -1,0 +1,81 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Overall description
+\end_layout
+
+\begin_layout Standard
+Hojun Does Me! WHAT DOES THE SYSTEM LOOK LIKE
+\end_layout
+
+\begin_layout Subsection
+Product Perspective
+\end_layout
+
+\begin_layout Standard
+NAM does me!
+\end_layout
+
+\begin_layout Itemize
+What is the existing system?
+\end_layout
+
+\begin_layout Itemize
+What is in place in the smart home now?
+\end_layout
+
+\begin_layout Itemize
+What have other projects done?
+\end_layout
+
+\begin_layout Subsection
+Product functions
+\end_layout
+
+\begin_layout Subsection
+User characteristics
+\end_layout
+
+\begin_layout Subsection
+Constraints
+\end_layout
+
+\end_body
+\end_document
