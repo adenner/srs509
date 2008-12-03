@@ -39,6 +39,10 @@
 \begin_body
 
 \begin_layout Section
+Overview
+\end_layout
+
+\begin_layout Section
 Overall description
 \end_layout
 
@@ -195,23 +199,665 @@ Product Perspective
 \end_layout
 
 \begin_layout Standard
-NAM does me!
+This section quoted from the vision document by Chad Kilgore, Matt Peitz,
+ Kendra Schmid.
+ 
 \end_layout
 
-\begin_layout Itemize
-What is the existing system?
+\begin_layout Standard
+Assisted Living Facilities: Assisted living facilities are for persons that
+ need assistance with ADLs but wish to live as independently as possible.
+ Most assisted living facilities create a detailed service plan for individual
+ residents upon admission, which is updated regularly to assure that the
+ resident receives the appropriate care as his or her condition changes.
+ These services include help preparing meals, bathing, dressing, performing
+ household chores, and aid for persons confused or experience memory problems.
+ Other common terms for assisted living are residential care, personal care,
+ adult congregate living care and supported care.
 \end_layout
 
-\begin_layout Itemize
-What is in place in the smart home now?
+\begin_layout Standard
+Nursing Homes: Nursing homes provide skilled nursing care and rehabilitation
+ services to people with illnesses, injuries or functional disabilities.
+ Even though most facilities serve the elderly, some facilities provide
+ services to younger individuals with special needs, such as the developmentally
+ disabled, mentally ill, and those needing drug and alcohol rehabilitation.
+ Nursing homes are generally stand-alone facilities, focusing their attention
+ on rehabilitation, so that their residents can return to their own homes
+ as soon as possible.
+ Some of the services provided by nursing homes include therapies, pharmacy
+ services, and specialty care, such as Alzheimer's treatment, neuromuscular
+ diseases, stroke recovery.
 \end_layout
 
-\begin_layout Itemize
-What have other projects done?
+\begin_layout Standard
+University of Florida: “The RERC-Tech-Aging is testing currently available
+ home monitoring products relative to their effectiveness in relation to
+ independence, quality of life and health related costs.
+ The RERC-Tech-Aging is also identifying needs and barriers to home monitoring
+ and communication technology, and addressing needs of special populations
+ including rural-living elders, and people aging with disability.
+ The results of this research will be relevant to health policy makers,
+ device developers, and other investigators.
+ The RERC-Tech-Aging works with companies on pre-product testing, including
+ Honeywell's very promising Independent LifeStyle Assistant (ILSA).
+ We are advancing very new consumer products such as Motorola's Smart Phone,
+ to provide applications useful for older people with disabilities.
+ We are also studying the requirements for, and development of a device
+ / system for elders with cognitive impairment.
+ We are applying the concept of pervasive computing to the needs of older
+ persons through our work with smart phones and smart homes.”
+\end_layout
+
+\begin_layout Standard
+Niagara Framework: The Niagara Framework, developed by Tridium Software,
+ is a Java-based framework that allows development of smart homes using
+ different components from different manufactures.
+ Niagara was developed using JavaBeans that allows every component to be
+ treated as an object.
+ Niagara uses an adapter development pattern so that every object, regardless
+ of manufacture, communication standard, or software can run from a standard
+ web browser.
+ The framework can then dictate to each device what needs to be done its
+ own protocol, thus saving time that would be used to program all devices.
+ The framework operates on a wide variety of hardware platforms and operating
+ systems due to Java development.
+ The Niagara Framework differs from the project vision since the framework
+ is designed primarily for an electronic house, not necessarily a smart
+ home.
+\end_layout
+
+\begin_layout Standard
+Concept of Operations
+\end_layout
+
+\begin_layout Standard
+The system will not only help users in daily tasks such as scheduling, shopping,
+ it also protect an user inside the house with health care and nutrion system
+ and security of the house.
+ The system has an easy-to-use interface and is configurable.
+ The system is fault tolerant i.e in the worst case the system does not do
+ any harm to users.
+ With an interactive interface, the system can visualize concepts and communicat
+e with users in friendly and understandable ways.
+ 
 \end_layout
 
 \begin_layout Subsection
 Product functions
+\end_layout
+
+\begin_layout Subsubsection
+Scheduler
+\end_layout
+
+\begin_layout Standard
+Tittle:Scheduler
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Description
+\series default
+:User needs to make or modify a schedule 
+\end_layout
+
+\begin_layout Standard
+Actor:user
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preconditions: 
+\series default
+The system is on and the user wants to make/modify a schedule
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Postconditions:
+\series default
+The user has made/modify a schedule and the system records changes in scheduling
+ database.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Basicflow:
+\end_layout
+
+\begin_layout Enumerate
+The user informs the system to make a schedule with given preference like
+ date, time or place.
+\end_layout
+
+\begin_layout Enumerate
+The system identifies which time and place is available and suitable (e.g
+ wheather conditions, traffic)for user's normal schedule
+\end_layout
+
+\begin_layout Enumerate
+The system visualize available times and suitable places for the user to
+ choose
+\end_layout
+
+\begin_layout Enumerate
+The user decides which time is suitable
+\end_layout
+
+\begin_layout Enumerate
+The system get confirmation from user and store in the database
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Alternate flow:
+\end_layout
+
+\begin_layout Standard
+The user wants to modify a schedule given name,date or time of meeting
+\end_layout
+
+\begin_layout Standard
+The system searches through the database for possible matched schedules
+ and visualize them for user
+\end_layout
+
+\begin_layout Standard
+The user chooses the right one 
+\end_layout
+
+\begin_layout Standard
+The system displays options: correct the meeting time, cancel an appointment,
+ change the meeting place.
+\end_layout
+
+\begin_layout Standard
+The User choose one option 
+\end_layout
+
+\begin_layout Standard
+The system follows the user's choice and continue until the user finishes
+ modification
+\end_layout
+
+\begin_layout Standard
+The system get confirmation about the modifications and store in the database
+\end_layout
+
+\begin_layout Subsubsection
+Medical Monitor
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Titile
+\series default
+:Medical Monitor
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Description
+\series default
+: The system monitor the health status of the user
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Actor: 
+\series default
+The system
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preconditions: 
+\series default
+The system is on and all sensors are in working condition
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Postconditions: 
+\series default
+The information about health status of users is obtained.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Basicflow:
+\end_layout
+
+\begin_layout Standard
+The system receive medical information from all sensors such as blood pressure,
+ glucometer level,spirometer, pulse oximeter, weight scale, etc
+\end_layout
+
+\begin_layout Standard
+The system checking the consistent with the information in previous period.
+\end_layout
+
+\begin_layout Standard
+Notify user immediately when the obtained information is abnormal.
+\end_layout
+
+\begin_layout Standard
+If there is no response from user in specific amount of time, the system
+ raises an alarm and call hospital for emergency case.
+\end_layout
+
+\begin_layout Subsubsection
+Security/Fire monitor
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Titile
+\series default
+: Security/Fire monitor
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Description
+\series default
+:The system provide a security for users and the house 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Actor: 
+\series default
+The system and the user
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preconditions: 
+\series default
+The system is on.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Postconditions:
+\series default
+The house and the customer are safe.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Basicflow:
+\end_layout
+
+\begin_layout Enumerate
+The system receive information from medical monitor and sensors like temperature
+ sensor, smoke sensor, etc around the house.
+\end_layout
+
+\begin_layout Enumerate
+Anything abnormal happens, the system give warnings to user via communication
+ devices like cell phone,email, etc.
+\end_layout
+
+\begin_layout Enumerate
+After a specific of time without any confirm from user, the system raise
+ an alarm, close all the doors and call 911.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Alternate:
+\end_layout
+
+\begin_layout Standard
+3(a).
+ The user turns off the alarm.
+\end_layout
+
+\begin_layout Standard
+4.
+ The system verify the user's identity
+\end_layout
+
+\begin_layout Standard
+5.The system turns off the alarm when the identity is clear
+\end_layout
+
+\begin_layout Subsubsection
+Nutrion Monitor/Planner
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Titile
+\series default
+:Nutrion Monitor/Planner
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Description
+\series default
+:Monitor the food and help the user choose right food plan
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Actor: 
+\series default
+The system and the user
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preconditions: 
+\series default
+The system is in working mode and the user's privilege is clear
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Post conditions:
+\series default
+The nutrition level in user's meal is acceptable.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Basic flow:
+\end_layout
+
+\begin_layout Standard
+The system gets information from medical monitor to get health status of
+ the user.
+\end_layout
+
+\begin_layout Standard
+The system suggests the user which food is good for current status of user.
+\end_layout
+
+\begin_layout Standard
+The user chooses specific food from suggestions.
+\end_layout
+
+\begin_layout Standard
+The system send the food order to the market.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Alternate:
+\end_layout
+
+\begin_layout Standard
+The user choose a nutrition mode: normal or diet.
+\end_layout
+
+\begin_layout Standard
+The system compare the health status of user and the mode.
+\end_layout
+
+\begin_layout Standard
+If something conflicts, the system give a warning to the user.
+\end_layout
+
+\begin_layout Standard
+If everything is fine, the system schedule and order suitable food for user's
+ nutrition mode.
+\end_layout
+
+\begin_layout Subsubsection
+Configuration System
+\end_layout
+
+\begin_layout Description
+Title: Configuration System
+\end_layout
+
+\begin_layout Description
+Description: Configuration system provides an interface to configure system.
+\end_layout
+
+\begin_layout Description
+Actor: User, system engineer, service provider
+\end_layout
+
+\begin_layout Description
+Pre\InsetSpace \space{}
+conditions: System is on and configuration system is available for use.
+\end_layout
+
+\begin_layout Description
+Post\InsetSpace \space{}
+conditions: System has been configured.
+\end_layout
+
+\begin_layout Description
+Basic\InsetSpace \space{}
+flow:
+\end_layout
+
+\begin_layout Enumerate
+The customer instructs the system to be configured.
+\end_layout
+
+\begin_layout Enumerate
+The system provides an interface to configure system.
+\end_layout
+
+\begin_layout Enumerate
+The customer configure system through the provided interface.
+\end_layout
+
+\begin_layout Enumerate
+The system notifies the customer that the system has been configured.
+\end_layout
+
+\begin_layout Description
+Alternate\InsetSpace \space{}
+flow: 
+\end_layout
+
+\begin_layout Standard
+1a) The system engineer instructs the system to be configured.
+\end_layout
+
+\begin_layout Enumerate
+The system provides a richer interface to configure system.
+\end_layout
+
+\begin_layout Subsubsection
+Medical consult
+\end_layout
+
+\begin_layout Description
+Title: Medical consult
+\end_layout
+
+\begin_layout Description
+Description: Consult with a doctor or a nurse about the customer's heal
+ condition.
+\end_layout
+
+\begin_layout Description
+Actor: Customer
+\end_layout
+
+\begin_layout Description
+Pre\InsetSpace \space{}
+conditions: System is on and phone connection is available.
+ 
+\end_layout
+
+\begin_layout Description
+Post\InsetSpace \space{}
+conditions: phone connection has been disconnected.
+\end_layout
+
+\begin_layout Description
+Basic\InsetSpace \space{}
+flow:
+\end_layout
+
+\begin_layout Enumerate
+The customer instructs the system to connect a medical service center.
+\end_layout
+
+\begin_layout Enumerate
+The system call a medical service center.
+\end_layout
+
+\begin_layout Enumerate
+The customer consults with a doctor or a nurse about his/her condition.
+\end_layout
+
+\begin_layout Enumerate
+The system disconnect a phone call.
+\end_layout
+
+\begin_layout Description
+Alternate\InsetSpace \space{}
+flow: 
+\end_layout
+
+\begin_layout Standard
+2a) If the system has a camera and network connection, use a video conference.
+\end_layout
+
+\begin_layout Standard
+3a) If the system has a network connection, the system sends user's health
+ status.
+\end_layout
+
+\begin_layout Subsubsection
+Degrade function mode
+\end_layout
+
+\begin_layout Description
+Title: Degrade function mode
+\end_layout
+
+\begin_layout Description
+Description: Degrade mode keeps system working correctly although there
+ is possibility that can make system hazard.
+ Possible hazards could be blackout, network disconnection, sensor or device
+ malfunctioning and etc.
+\end_layout
+
+\begin_layout Description
+Actor: System
+\end_layout
+
+\begin_layout Description
+Pre\InsetSpace \space{}
+conditions: The system detects hazard.
+\end_layout
+
+\begin_layout Description
+Post\InsetSpace \space{}
+conditions: The system keeps working.
+\end_layout
+
+\begin_layout Description
+Basic\InsetSpace \space{}
+flow:
+\end_layout
+
+\begin_layout Enumerate
+The system detects hazard.
+\end_layout
+
+\begin_layout Enumerate
+The system change its mode to degrade mode.
+\end_layout
+
+\begin_layout Enumerate
+Depends on a type of hazard, it does proper actions to keep working.
+\end_layout
+
+\begin_layout Description
+Alternate\InsetSpace \space{}
+flow: 
+\end_layout
+
+\begin_layout Standard
+3a) If it is not possible to keep working, a customer service can detect
+ system down by using heart-beat technique.
+\end_layout
+
+\begin_layout Subsubsection
+Priortizer
+\end_layout
+
+\begin_layout Description
+Title: Prioritizer
+\end_layout
+
+\begin_layout Description
+Description: Prioritizer gives a function that prioritize notifications
+ and alarms.
+\end_layout
+
+\begin_layout Description
+Actor: System
+\end_layout
+
+\begin_layout Description
+Pre\InsetSpace \space{}
+conditions: System has notifications and alarms in queue to be processed.
+\end_layout
+
+\begin_layout Description
+Post\InsetSpace \space{}
+conditions: Notify the notifications and alarms based on priority.
+\end_layout
+
+\begin_layout Description
+Basic\InsetSpace \space{}
+flow:
+\end_layout
+
+\begin_layout Enumerate
+The system detects notifications and alarms to be notified.
+\end_layout
+
+\begin_layout Enumerate
+The system check the rules to prioritize notifications and alarms.
+\end_layout
+
+\begin_layout Enumerate
+Reorder the notifications and alarms based on priority.
+\end_layout
+
+\begin_layout Enumerate
+Notify the notifications and alarms based on priority.
 \end_layout
 
 \begin_layout Subsection
