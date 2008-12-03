@@ -1,0 +1,268 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Subsubsection
+Configuration System
+\end_layout
+
+\begin_layout Description
+Title: Configuration System
+\end_layout
+
+\begin_layout Description
+Description: Configuration system provides an interface to configure system.
+\end_layout
+
+\begin_layout Description
+Actor: User, system engineer, service provider
+\end_layout
+
+\begin_layout Description
+Pre\InsetSpace \space{}
+conditions: System is on and configuration system is available for use.
+\end_layout
+
+\begin_layout Description
+Post\InsetSpace \space{}
+conditions: System has been configured.
+\end_layout
+
+\begin_layout Description
+Basic\InsetSpace \space{}
+flow:
+\end_layout
+
+\begin_layout Enumerate
+The customer instructs the system to be configured.
+\end_layout
+
+\begin_layout Enumerate
+The system provides an interface to configure system.
+\end_layout
+
+\begin_layout Enumerate
+The customer configure system through the provided interface.
+\end_layout
+
+\begin_layout Enumerate
+The system notifies the customer that the system has been configured.
+\end_layout
+
+\begin_layout Description
+Alternate\InsetSpace \space{}
+flow: 
+\end_layout
+
+\begin_layout Standard
+1a) The system engineer instructs the system to be configured.
+\end_layout
+
+\begin_layout Enumerate
+The system provides a richer interface to configure system.
+\end_layout
+
+\begin_layout Subsubsection
+Medical consult
+\end_layout
+
+\begin_layout Description
+Title: Medical consult
+\end_layout
+
+\begin_layout Description
+Description: Consult with a doctor or a nurse about the customer's heal
+ condition.
+\end_layout
+
+\begin_layout Description
+Actor: Customer
+\end_layout
+
+\begin_layout Description
+Pre\InsetSpace \space{}
+conditions: System is on and phone connection is available.
+ 
+\end_layout
+
+\begin_layout Description
+Post\InsetSpace \space{}
+conditions: phone connection has been disconnected.
+\end_layout
+
+\begin_layout Description
+Basic\InsetSpace \space{}
+flow:
+\end_layout
+
+\begin_layout Enumerate
+The customer instructs the system to connect a medical service center.
+\end_layout
+
+\begin_layout Enumerate
+The system call a medical service center.
+\end_layout
+
+\begin_layout Enumerate
+The customer consults with a doctor or a nurse about his/her condition.
+\end_layout
+
+\begin_layout Enumerate
+The system disconnect a phone call.
+\end_layout
+
+\begin_layout Description
+Alternate\InsetSpace \space{}
+flow: 
+\end_layout
+
+\begin_layout Standard
+2a) If the system has a camera and network connection, use a video conference.
+\end_layout
+
+\begin_layout Standard
+3a) If the system has a network connection, the system sends user's health
+ status.
+\end_layout
+
+\begin_layout Subsubsection
+Degrade function mode
+\end_layout
+
+\begin_layout Description
+Title: Degrade function mode
+\end_layout
+
+\begin_layout Description
+Description: Degrade mode keeps system working correctly although there
+ is possibility that can make system hazard.
+ Possible hazards could be blackout, network disconnection, sensor or device
+ malfunctioning and etc.
+\end_layout
+
+\begin_layout Description
+Actor: System
+\end_layout
+
+\begin_layout Description
+Pre\InsetSpace \space{}
+conditions: The system detects hazard.
+\end_layout
+
+\begin_layout Description
+Post\InsetSpace \space{}
+conditions: The system keeps working.
+\end_layout
+
+\begin_layout Description
+Basic\InsetSpace \space{}
+flow:
+\end_layout
+
+\begin_layout Enumerate
+The system detects hazard.
+\end_layout
+
+\begin_layout Enumerate
+The system change its mode to degrade mode.
+\end_layout
+
+\begin_layout Enumerate
+Depends on a type of hazard, it does proper actions to keep working.
+\end_layout
+
+\begin_layout Description
+Alternate\InsetSpace \space{}
+flow: 
+\end_layout
+
+\begin_layout Standard
+3a) If it is not possible to keep working, a customer service can detect
+ system down by using heart-beat technique.
+\end_layout
+
+\begin_layout Subsubsection
+Priortizer
+\end_layout
+
+\begin_layout Description
+Title: Prioritizer
+\end_layout
+
+\begin_layout Description
+Description: Prioritizer gives a function that prioritize notifications
+ and alarms.
+\end_layout
+
+\begin_layout Description
+Actor: System
+\end_layout
+
+\begin_layout Description
+Pre\InsetSpace \space{}
+conditions: System has notifications and alarms in queue to be processed.
+\end_layout
+
+\begin_layout Description
+Post\InsetSpace \space{}
+conditions: Notify the notifications and alarms based on priority.
+\end_layout
+
+\begin_layout Description
+Basic\InsetSpace \space{}
+flow:
+\end_layout
+
+\begin_layout Enumerate
+The system detects notifications and alarms to be notified.
+\end_layout
+
+\begin_layout Enumerate
+The system check the rules to prioritize notifications and alarms.
+\end_layout
+
+\begin_layout Enumerate
+Reorder the notifications and alarms based on priority.
+\end_layout
+
+\begin_layout Enumerate
+Notify the notifications and alarms based on priority.
+\end_layout
+
+\end_body
+\end_document
