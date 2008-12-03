@@ -39,10 +39,6 @@
 \begin_body
 
 \begin_layout Section
-Overview
-\end_layout
-
-\begin_layout Section
 Overall description
 \end_layout
 
@@ -860,6 +856,389 @@ Reorder the notifications and alarms based on priority.
 Notify the notifications and alarms based on priority.
 \end_layout
 
+\begin_layout Subsubsection
+User Level Control
+\end_layout
+
+\begin_layout Description
+Title User Level Control
+\end_layout
+
+\begin_layout Description
+Description The user desires to make a modification to a setting, create
+ a new event or some other setting.
+\end_layout
+
+\begin_layout Description
+Actor Customer
+\end_layout
+
+\begin_layout Description
+Pre
+\begin_inset Formula $\:$
+\end_inset
+
+condition The user is a properly authenticated user and the system is on
+ 
+\end_layout
+
+\begin_layout Description
+Post
+\begin_inset Formula $\:$
+\end_inset
+
+condition The system is updated with the change to the user's preference
+\end_layout
+
+\begin_layout Description
+Basic
+\begin_inset Formula $\:$
+\end_inset
+
+Flow:
+\end_layout
+
+\begin_layout Enumerate
+User Selects the Control menu from listed options
+\end_layout
+
+\begin_layout Enumerate
+System displays Control options for the User
+\end_layout
+
+\begin_layout Enumerate
+User selects option to be changed 
+\end_layout
+
+\begin_layout Enumerate
+System displays data associated with option
+\end_layout
+
+\begin_layout Enumerate
+User provides updated data
+\end_layout
+
+\begin_layout Enumerate
+System saves configuration
+\end_layout
+
+\begin_layout Description
+Alternate
+\begin_inset Formula $\:$
+\end_inset
+
+Flow:
+\end_layout
+
+\begin_layout Enumerate
+User leaves control before saving configuration
+\end_layout
+
+\begin_layout Enumerate
+System disregards changes and returns to previous state
+\end_layout
+
+\begin_layout Subsubsection
+Caretaker Control
+\end_layout
+
+\begin_layout Description
+Title Caretaker Control
+\end_layout
+
+\begin_layout Description
+Description The caretaker desires to make a modification to a Users 
+\end_layout
+
+\begin_layout Description
+Actor Caretaker
+\end_layout
+
+\begin_layout Description
+Pre
+\begin_inset Formula $\:$
+\end_inset
+
+condition The user is a properly authenticated Caretaker and the system
+ is in caretaker mode 
+\end_layout
+
+\begin_layout Description
+Post
+\begin_inset Formula $\:$
+\end_inset
+
+condition The system is updated with the change to the user's preference
+\end_layout
+
+\begin_layout Description
+Basic
+\begin_inset Formula $\:$
+\end_inset
+
+Flow:
+\end_layout
+
+\begin_layout Enumerate
+Caretaker Selects the Control menu from listed options
+\end_layout
+
+\begin_layout Enumerate
+System displays list of Users the Caretaker
+\end_layout
+
+\begin_layout Enumerate
+Caretaker selects specific user to preform actions
+\end_layout
+
+\begin_layout Enumerate
+System displays a list of options associated with user
+\end_layout
+
+\begin_layout Enumerate
+Caretaker selects specific option to modify
+\end_layout
+
+\begin_layout Enumerate
+System displays data associated with option
+\end_layout
+
+\begin_layout Enumerate
+Caretaker provides updated data
+\end_layout
+
+\begin_layout Enumerate
+System saves configuration
+\end_layout
+
+\begin_layout Description
+Alternate
+\begin_inset Formula $\:$
+\end_inset
+
+Flow:
+\end_layout
+
+\begin_layout Enumerate
+User leaves control before saving configuration
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+System disregards changes and returns to previous state
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+a.
+ Caretaker selects multiple users to modify at once
+\end_layout
+
+\begin_layout Subsubsection
+Proactive Alert/Notify System
+\end_layout
+
+\begin_layout Description
+Title Proactive Alert/Notify System
+\end_layout
+
+\begin_layout Description
+Description The CNS notifies/alerts user/caretaker of a pre-scheduled event.
+ An example of this would be notification of the need to take medicine or
+ of an appointment
+\end_layout
+
+\begin_layout Description
+Actor Customer, Caretaker
+\end_layout
+
+\begin_layout Description
+Pre
+\begin_inset Formula $\:$
+\end_inset
+
+condition A pre scheduled event is about to occur and the system is in a
+ ready state
+\end_layout
+
+\begin_layout Description
+Post
+\begin_inset Formula $\:$
+\end_inset
+
+condition The user/caretaker has been notified and acknowledges the event
+ or alert
+\end_layout
+
+\begin_layout Description
+Basic
+\begin_inset Formula $\:$
+\end_inset
+
+Flow:
+\end_layout
+
+\begin_layout Enumerate
+An event has been previously scheduled with the CNS system and is about
+ to occur (as defined in user preferences, i.e.
+ user specified that they desire notification 20 minutes before scheduled
+ Medical Consult
+\end_layout
+
+\begin_layout Enumerate
+System determines location of user through proximity sensors and RFID tagging
+\end_layout
+
+\begin_layout Enumerate
+System sends notification to device near user
+\end_layout
+
+\begin_layout Enumerate
+User acknowledges alert
+\end_layout
+
+\begin_layout Description
+Alternate
+\begin_inset Formula $\:$
+\end_inset
+
+Flow:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+System can not find user
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+System sends notification via Cellphone Text Message to user's phone
+\end_layout
+
+\begin_layout Enumerate
+User acknowledges via a text message
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+User does not respond to alert
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+System re-sends alert to a wider display set near user (as determined by
+ RFID and proximity sensors)
+\end_layout
+
+\begin_layout Enumerate
+User acknowledges request
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+User still does not respond
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Caretaker is notified of potential issue
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Reactive Alert/Notify System
+\end_layout
+
+\begin_layout Description
+Title Reactive Alert/Notify System
+\end_layout
+
+\begin_layout Description
+Description The user desires to make a modification to a setting, create
+ a new event or some other setting
+\end_layout
+
+\begin_layout Description
+Actor User, Caretaker, Emergency Personnel
+\end_layout
+
+\begin_layout Description
+Pre
+\begin_inset Formula $\:$
+\end_inset
+
+condition An event has accrued that requires intervention from the user,
+ caretaker, or emergency personnel depending on level of severity 
+\end_layout
+
+\begin_layout Description
+Post
+\begin_inset Formula $\:$
+\end_inset
+
+condition Proper actors notified of issue and activated
+\end_layout
+
+\begin_layout Description
+Basic
+\begin_inset Formula $\:$
+\end_inset
+
+Flow:
+\end_layout
+
+\begin_layout Enumerate
+Some unplanned event occurs.
+ Examples of events include:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Medical: stopped heart, low blood sugar, user fall, or other medical issue
+\end_layout
+
+\begin_layout Enumerate
+Safety: Break in, fire, or pipe burst detected
+\end_layout
+
+\begin_layout Enumerate
+User error: stove left on, refrigerator door left open
+\end_layout
+
+\begin_layout Enumerate
+Maintenance: sensor battery dead, not responding, equipment failure
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The level of severity of the issue is rated by the system using predefined
+ templates
+\end_layout
+
+\begin_layout Enumerate
+The system notifies the necessary actors based on severity level of the
+ event.
+\end_layout
+
+\begin_layout Description
+Alternate
+\begin_inset Formula $\:$
+\end_inset
+
+Flow:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Actor does not respond to notification
+\end_layout
+
+\begin_layout Enumerate
+System escelates notification to the next higher level of notification.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 User characteristics
 \end_layout
