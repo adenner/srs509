@@ -33,6 +33,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -42,9 +43,153 @@ Overall description
 \end_layout
 
 \begin_layout Standard
-Hojun Does Me! WHAT DOES THE SYSTEM LOOK LIKE
+This section seeks to clarify and describe the requirements of Smart Home
+ NCS.
+ Basically the system provides schedule management, notification and planning.
+ Since the target system is Smart Home and the target user is eldery or
+ disability people, it has design constratins and specfic features rather
+ than general NCS.
+ For example, a user interface should not to be difficult.
+ It should be simple and easy to understand.
+ Moreover, features need to be related to safety and health of users and
+ provide useful information for the target user.
 \end_layout
 
+\begin_layout Standard
+The NCS of the Smart Home has a number of crucial functionalities.
+ Calendarging functions give specific schudeling plan for eldery people
+ such as appoinments for a doctor, nurse, community event, and medecine
+ and meal plan.
+ Notification fucntions provides information of safety, emergency situation,
+ health status,and security.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+(Update the list of features later)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Calendaring - Functional features
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Scheduling transportation to community events
+\end_layout
+
+\begin_layout Itemize
+Scheduling a visit to doctor
+\end_layout
+
+\begin_layout Itemize
+Consulting with a nurse (virtual consultation)
+\end_layout
+
+\begin_layout Itemize
+Dispensing medications and taking pills
+\end_layout
+
+\begin_layout Itemize
+Recording exercise activities
+\end_layout
+
+\begin_layout Itemize
+Refilling prescriptions
+\end_layout
+
+\begin_layout Itemize
+Nutrition and Meal Planning
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Notification - Functional features
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Monitoring health status (glucometer, blood pressure, spirometer, pulse
+ oximeter, weight scales, and etc.) 
+\end_layout
+
+\begin_layout Itemize
+Calling for help after a fall 
+\end_layout
+
+\begin_layout Itemize
+Turning off the range automatically when it gets too hot or stays on too
+ long 
+\end_layout
+
+\begin_layout Itemize
+Looking to see who is at the front door (without opening the door) 
+\end_layout
+
+\begin_layout Itemize
+Providing long-distance monitoring for safety 
+\end_layout
+
+\begin_layout Itemize
+Requesting house cleaning or home maintenance services Checking security
+ system Schedule for house work (When did I clean, when should I change
+ a purifier filter, air filter, and so on) Making shopping list automatically
+ Checking bank statements Paying bills via Internet 
+\end_layout
+
+\begin_layout Itemize
+Requesting house cleaning or home maintenance services 
+\end_layout
+
+\begin_layout Itemize
+Checking security system 
+\end_layout
+
+\begin_layout Itemize
+Schedule for house work (When did I clean, when should I change a purifier
+ filter, air filter, and so on) 
+\end_layout
+
+\begin_layout Itemize
+Making shopping list automatically 
+\end_layout
+
+\begin_layout Itemize
+Checking bank statements 
+\end_layout
+
+\begin_layout Itemize
+Paying bills via Internet 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Non-functional features 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Universal Design for elderly people
+\end_layout
+
+\begin_layout Itemize
+Safety constrains
+\end_layout
+
+\begin_layout Itemize
+Reconfigurable System
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Product Perspective
 \end_layout
