@@ -33,6 +33,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -259,15 +260,53 @@ Overview
 \end_layout
 
 \begin_layout Standard
-Andy does me!
+The user demographic for the Smart Home is primarily elderly and disabled
+ people.
+ This particular demographic is often scared by a myriad of different software
+ tools for CNS systems.
+ These pre-existing software solutions are often far too complex and not
+ specifically suited to the unique needs of our user demographic.
+ At the same time our users are faced with potential decline in cognitive
+ function and an ever increasing set of appointments to doctors and other
+ senior activities as well as new dietary needs (such as low cholesterol
+ diets, diabetic concerns, etc.).
+ These increasing needs coupled with a desire to continue to be independent
+ underlay the requirements and design of the entire Smart Home as well as
+ the CNS specifically.
 \end_layout
 
 \begin_layout Standard
-ADD ME LATER
+Currently the state of products for calendering systems mainly focus on
+ businuess scheduling and are targeted at a younger more technicaly proficiant
+ demographic.
+ Examples of this include Microsoft's Outlook, the Google Calander, and
+ 
+\begin_inset Quotes eld
+\end_inset
+
+smart phone
+\begin_inset Quotes erd
+\end_inset
+
+ scheduleing.
+ These applications do not have the required level of simplicity nor the
+ desired integration to the Smart Home System.
 \end_layout
 
-\begin_layout Itemize
-see presentation background
+\begin_layout Standard
+Notification Systems...
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+I am not sure what to write about here...
+ any Ideas folks?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
