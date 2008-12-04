@@ -45,9 +45,9 @@ Overall description
 \begin_layout Standard
 This section seeks to clarify and describe the requirements of Smart Home
  NCS.
- Basically the system provides schedule management, notification and planning.
+ Basically, the system provides schedule management, notification and planning.
  Since the target system is Smart Home and the target user is eldery or
- disability people, it has design constratins and specfic features rather
+ disabled people, it has design constratins and specfic features different
  than general NCS.
  For example, a user interface should not to be difficult.
  It should be simple and easy to understand.
@@ -57,11 +57,11 @@ This section seeks to clarify and describe the requirements of Smart Home
 
 \begin_layout Standard
 The NCS of the Smart Home has a number of crucial functionalities.
- Calendarging functions give specific schudeling plan for eldery people
- such as appoinments for a doctor, nurse, community event, and medecine
- and meal plan.
- Notification fucntions provides information of safety, emergency situation,
- health status,and security.
+ Calendaring functions give specific schudeling plan for eldery people such
+ as appoinments for a doctor, nurse, community event, and medecine and meal
+ plan.
+ Notification fucntions provides information about safety, emergency situation,
+ health status, and security.
  
 \end_layout
 
@@ -155,11 +155,6 @@ Checking security system
 \end_layout
 
 \begin_layout Itemize
-Schedule for house work (When did I clean, when should I change a purifier
- filter, air filter, and so on) 
-\end_layout
-
-\begin_layout Itemize
 Making shopping list automatically 
 \end_layout
 
@@ -195,8 +190,8 @@ Product Perspective
 \end_layout
 
 \begin_layout Standard
-This section quoted from the vision document by Chad Kilgore, Matt Peitz,
- Kendra Schmid.
+This section is borrowed from the vision document by Chad Kilgore, Matt
+ Peitz, Kendra Schmid.
  
 \end_layout
 
@@ -263,8 +258,28 @@ Niagara Framework: The Niagara Framework, developed by Tridium Software,
  home.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsubsection
 Concept of Operations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/ClassDiagram1.png
+	scale 50
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/DeploymentDiagram1.png
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -283,12 +298,32 @@ e with users in friendly and understandable ways.
 Product functions
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/NotificationSystem.png
+	scale 50
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/CalenderingSystem.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Scheduler
 \end_layout
 
-\begin_layout Standard
-Tittle:Scheduler
+\begin_layout Description
+Tittle: Scheduler
 \end_layout
 
 \begin_layout Standard
@@ -296,14 +331,15 @@ Tittle:Scheduler
 \series bold
 Description
 \series default
-:User needs to make or modify a schedule 
+: User needs to make or modify a schedule 
 \end_layout
 
-\begin_layout Standard
-Actor:user
+\begin_layout Description
+Actor: user
 \end_layout
 
-\begin_layout Standard
+\begin_layout List
+\labelwidthstring 00.00.0000
 
 \series bold
 Preconditions: 
@@ -311,19 +347,23 @@ Preconditions:
 The system is on and the user wants to make/modify a schedule
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Postconditions:
 \series default
-The user has made/modify a schedule and the system records changes in scheduling
- database.
+ The user has made/modified a schedule and the system records changes in
+ scheduling database.
 \end_layout
 
 \begin_layout Standard
 
 \series bold
-Basicflow:
+Basic
+\begin_inset Formula $\:$
+\end_inset
+
+flow:
 \end_layout
 
 \begin_layout Enumerate
@@ -355,34 +395,34 @@ The system get confirmation from user and store in the database
 Alternate flow:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The user wants to modify a schedule given name,date or time of meeting
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The system searches through the database for possible matched schedules
  and visualize them for user
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The user chooses the right one 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The system displays options: correct the meeting time, cancel an appointment,
  change the meeting place.
 \end_layout
 
-\begin_layout Standard
-The User choose one option 
+\begin_layout Enumerate
+The User chooses one option 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The system follows the user's choice and continue until the user finishes
  modification
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The system get confirmation about the modifications and store in the database
 \end_layout
 
@@ -390,15 +430,15 @@ The system get confirmation about the modifications and store in the database
 Medical Monitor
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Titile
 \series default
-:Medical Monitor
+: Medical Monitor
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Description
@@ -406,15 +446,15 @@ Description
 : The system monitor the health status of the user
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Actor: 
 \series default
-The system
+The system and user
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Preconditions: 
@@ -422,7 +462,7 @@ Preconditions:
 The system is on and all sensors are in working condition
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Postconditions: 
@@ -430,35 +470,40 @@ Postconditions:
 The information about health status of users is obtained.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
-Basicflow:
+Basic
+\begin_inset Formula $\:$
+\end_inset
+
+flow:
 \end_layout
 
-\begin_layout Standard
-The system receive medical information from all sensors such as blood pressure,
- glucometer level,spirometer, pulse oximeter, weight scale, etc
+\begin_layout Enumerate
+The system receives medical information from all sensors such as blood pressure,
+ glucometer level, spirometer, pulse oximeter, weight scale, etc
 \end_layout
 
-\begin_layout Standard
-The system checking the consistent with the information in previous period.
+\begin_layout Enumerate
+The system checks the consistancy with the information in previous period.
 \end_layout
 
-\begin_layout Standard
-Notify user immediately when the obtained information is abnormal.
+\begin_layout Enumerate
+The system notifies the user immediately when the obtained information is
+ abnormal.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 If there is no response from user in specific amount of time, the system
- raises an alarm and call hospital for emergency case.
+ raises an alarm and calls the hospital for emergency case.
 \end_layout
 
 \begin_layout Subsubsection
 Security/Fire monitor
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Titile
@@ -466,15 +511,15 @@ Titile
 : Security/Fire monitor
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Description
 \series default
-:The system provide a security for users and the house 
+: The system provides security monitoring for users and the home 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Actor: 
@@ -482,7 +527,7 @@ Actor:
 The system and the user
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Preconditions: 
@@ -490,7 +535,7 @@ Preconditions:
 The system is on.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Postconditions:
@@ -498,7 +543,7 @@ Postconditions:
 The house and the customer are safe.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Basicflow:
@@ -511,20 +556,21 @@ The system receive information from medical monitor and sensors like temperature
 
 \begin_layout Enumerate
 Anything abnormal happens, the system give warnings to user via communication
- devices like cell phone,email, etc.
+ devices like cell phone, email, etc.
 \end_layout
 
 \begin_layout Enumerate
-After a specific of time without any confirm from user, the system raise
- an alarm, close all the doors and call 911.
+After a specific of time without any confirmation from user, the system
+ raises an alarm, and calls 911.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Alternate:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 3(a).
  The user turns off the alarm.
@@ -539,27 +585,28 @@ Alternate:
 5.The system turns off the alarm when the identity is clear
 \end_layout
 
+\end_deeper
 \begin_layout Subsubsection
 Nutrion Monitor/Planner
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Titile
 \series default
-:Nutrion Monitor/Planner
+: Nutrion Monitor/Planner
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Description
 \series default
-:Monitor the food and help the user choose right food plan
+: Monitor food usage and help the user choose right food plan
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Actor: 
@@ -567,7 +614,7 @@ Actor:
 The system and the user
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Preconditions: 
@@ -575,58 +622,66 @@ Preconditions:
 The system is in working mode and the user's privilege is clear
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
-Post conditions:
+Post
+\begin_inset Formula $\:$
+\end_inset
+
+conditions:
 \series default
-The nutrition level in user's meal is acceptable.
+ The nutrition level in user's meal is acceptable.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
-Basic flow:
+Basic
+\begin_inset Formula $\:$
+\end_inset
+
+flow:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The system gets information from medical monitor to get health status of
  the user.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The system suggests the user which food is good for current status of user.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The user chooses specific food from suggestions.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The system send the food order to the market.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \series bold
 Alternate:
 \end_layout
 
-\begin_layout Standard
-The user choose a nutrition mode: normal or diet.
+\begin_layout Enumerate
+The user chooses a nutrition mode: normal or diet.
 \end_layout
 
-\begin_layout Standard
-The system compare the health status of user and the mode.
+\begin_layout Enumerate
+The system compares the health status of user and the mode.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 If something conflicts, the system give a warning to the user.
 \end_layout
 
-\begin_layout Standard
-If everything is fine, the system schedule and order suitable food for user's
- nutrition mode.
+\begin_layout Enumerate
+If everything is fine, the system schedules and orders suitable food for
+ user's nutrition mode.
 \end_layout
 
 \begin_layout Subsubsection
@@ -647,12 +702,13 @@ Actor: User, system engineer, service provider
 
 \begin_layout Description
 Pre\InsetSpace \space{}
-conditions: System is on and configuration system is available for use.
+conditions: The system is on and configuration system is available for
+ use.
 \end_layout
 
 \begin_layout Description
 Post\InsetSpace \space{}
-conditions: System has been configured.
+conditions: The system has been configured.
 \end_layout
 
 \begin_layout Description
@@ -669,7 +725,7 @@ The system provides an interface to configure system.
 \end_layout
 
 \begin_layout Enumerate
-The customer configure system through the provided interface.
+The customer configures the system through the provided interface.
 \end_layout
 
 \begin_layout Enumerate
@@ -686,6 +742,16 @@ flow:
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+reword..
+ HUH? 
+\end_layout
+
+\end_inset
+
 The system provides a richer interface to configure system.
 \end_layout
 
@@ -698,7 +764,7 @@ Title: Medical consult
 \end_layout
 
 \begin_layout Description
-Description: Consult with a doctor or a nurse about the customer's heal
+Description: Consult with a doctor or a nurse about the customer's health
  condition.
 \end_layout
 
@@ -708,13 +774,13 @@ Actor: Customer
 
 \begin_layout Description
 Pre\InsetSpace \space{}
-conditions: System is on and phone connection is available.
+conditions: System is on and phone and/or network connections is available.
  
 \end_layout
 
 \begin_layout Description
 Post\InsetSpace \space{}
-conditions: phone connection has been disconnected.
+conditions: Medical issue has been resolved.
 \end_layout
 
 \begin_layout Description
@@ -735,7 +801,7 @@ The customer consults with a doctor or a nurse about his/her condition.
 \end_layout
 
 \begin_layout Enumerate
-The system disconnect a phone call.
+The system disconnects the phone call.
 \end_layout
 
 \begin_layout Description
@@ -743,6 +809,7 @@ Alternate\InsetSpace \space{}
 flow: 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 2a) If the system has a camera and network connection, use a video conference.
 \end_layout
@@ -752,19 +819,20 @@ flow:
  status.
 \end_layout
 
+\end_deeper
 \begin_layout Subsubsection
-Degrade function mode
+Degraded function mode
 \end_layout
 
 \begin_layout Description
-Title: Degrade function mode
+Title: Degraded function mode
 \end_layout
 
 \begin_layout Description
-Description: Degrade mode keeps system working correctly although there
- is possibility that can make system hazard.
- Possible hazards could be blackout, network disconnection, sensor or device
- malfunctioning and etc.
+Description: Degraded mode keeps system working correctly through possible
+ system hazard conditions.
+ Possible hazards include blackout, network disconnection, sensor or device
+ malfunctions and etc.
 \end_layout
 
 \begin_layout Description
@@ -773,7 +841,7 @@ Actor: System
 
 \begin_layout Description
 Pre\InsetSpace \space{}
-conditions: The system detects hazard.
+conditions: The system detects a hazard.
 \end_layout
 
 \begin_layout Description
@@ -787,15 +855,16 @@ flow:
 \end_layout
 
 \begin_layout Enumerate
-The system detects hazard.
+The system detects a hazard.
 \end_layout
 
 \begin_layout Enumerate
-The system change its mode to degrade mode.
+The system change its mode to degraded mode.
 \end_layout
 
 \begin_layout Enumerate
-Depends on a type of hazard, it does proper actions to keep working.
+Depending on the type of hazard, the system performs the proper actions
+ to keep working.
 \end_layout
 
 \begin_layout Description
@@ -803,11 +872,13 @@ Alternate\InsetSpace \space{}
 flow: 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
-3a) If it is not possible to keep working, a customer service can detect
- system down by using heart-beat technique.
+3a) If the system can not continue operation, the service center detectes
+ failure through a heart-beat technique.
 \end_layout
 
+\end_deeper
 \begin_layout Subsubsection
 Priortizer
 \end_layout
@@ -817,7 +888,7 @@ Title: Prioritizer
 \end_layout
 
 \begin_layout Description
-Description: Prioritizer gives a function that prioritize notifications
+Description: The prioritizer gives a function that prioritize notifications
  and alarms.
 \end_layout
 
@@ -832,7 +903,7 @@ conditions: System has notifications and alarms in queue to be processed.
 
 \begin_layout Description
 Post\InsetSpace \space{}
-conditions: Notify the notifications and alarms based on priority.
+conditions: Process the notifications and alarms based on priority.
 \end_layout
 
 \begin_layout Description
@@ -841,19 +912,19 @@ flow:
 \end_layout
 
 \begin_layout Enumerate
-The system detects notifications and alarms to be notified.
+The system detects notifications and alarms to be sent.
 \end_layout
 
 \begin_layout Enumerate
-The system check the rules to prioritize notifications and alarms.
+The system checks the rules to prioritize notifications and alarms.
 \end_layout
 
 \begin_layout Enumerate
-Reorder the notifications and alarms based on priority.
+The system reorders the notifications and alarms based on priority.
 \end_layout
 
 \begin_layout Enumerate
-Notify the notifications and alarms based on priority.
+The system sends the notifications and alarms based on priority.
 \end_layout
 
 \begin_layout Subsubsection
@@ -865,8 +936,8 @@ Title User Level Control
 \end_layout
 
 \begin_layout Description
-Description The user desires to make a modification to a setting, create
- a new event or some other setting.
+Description The user desires to make a modification to a setting, or create
+ a new event or modify some other setting.
 \end_layout
 
 \begin_layout Description
@@ -878,7 +949,7 @@ Pre
 \begin_inset Formula $\:$
 \end_inset
 
-condition The user is a properly authenticated user and the system is on
+condition The user is a properly authenticated user, and the system is on
  
 \end_layout
 
@@ -899,7 +970,7 @@ Flow:
 \end_layout
 
 \begin_layout Enumerate
-User Selects the Control menu from listed options
+User selects the Control menu from listed options
 \end_layout
 
 \begin_layout Enumerate
@@ -947,7 +1018,7 @@ Title Caretaker Control
 \end_layout
 
 \begin_layout Description
-Description The caretaker desires to make a modification to a Users 
+Description The caretaker desires to make a modification to a user 
 \end_layout
 
 \begin_layout Description
@@ -959,7 +1030,7 @@ Pre
 \begin_inset Formula $\:$
 \end_inset
 
-condition The user is a properly authenticated Caretaker and the system
+condition The user is a properly authenticated caretaker and the system
  is in caretaker mode 
 \end_layout
 
@@ -980,15 +1051,15 @@ Flow:
 \end_layout
 
 \begin_layout Enumerate
-Caretaker Selects the Control menu from listed options
+Caretaker selects the control menu from listed options
 \end_layout
 
 \begin_layout Enumerate
-System displays list of Users the Caretaker
+System displays list of users for the caretaker
 \end_layout
 
 \begin_layout Enumerate
-Caretaker selects specific user to preform actions
+Caretaker selects specific user to preform actions on
 \end_layout
 
 \begin_layout Enumerate
@@ -1031,7 +1102,7 @@ System disregards changes and returns to previous state
 \end_deeper
 \begin_layout Enumerate
 a.
- Caretaker selects multiple users to modify at once
+ Caretaker selects multiple users to modify at the same time
 \end_layout
 
 \begin_layout Subsubsection
@@ -1082,7 +1153,7 @@ Flow:
 An event has been previously scheduled with the CNS system and is about
  to occur (as defined in user preferences, i.e.
  user specified that they desire notification 20 minutes before scheduled
- Medical Consult
+ Medical Consultations)
 \end_layout
 
 \begin_layout Enumerate
@@ -1112,7 +1183,7 @@ System can not find user
 
 \begin_deeper
 \begin_layout Enumerate
-System sends notification via Cellphone Text Message to user's phone
+System sends notification via Cellphone Text Message (SMS) to user's phone
 \end_layout
 
 \begin_layout Enumerate
@@ -1168,7 +1239,7 @@ Pre
 \begin_inset Formula $\:$
 \end_inset
 
-condition An event has accrued that requires intervention from the user,
+condition An event has occured that requires intervention from the user,
  caretaker, or emergency personnel depending on level of severity 
 \end_layout
 
