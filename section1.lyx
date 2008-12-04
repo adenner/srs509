@@ -53,10 +53,10 @@ This document details both the functional and nonfunctional requirements
 \end_layout
 
 \begin_layout Standard
-The purpose of this document is to serve as a contract between the team
- members of the Smart Home project to ensure fulfillment of project requirements
- and enumerate the interfaces and inner workings of the NCS with the rest
- of the Smart Home system.
+This document serves as a contract between the team members of the Smart
+ Home project(SHP) at Iowa State University to ensure fulfillment of project
+ requirements and to describe the inner workings of the NCS and it's interaction
+s with the SHP.
 \end_layout
 
 \begin_layout Subsection
@@ -64,10 +64,10 @@ Scope
 \end_layout
 
 \begin_layout Standard
-The scope of this document covers the functional and non-functional requirements
- of the NCS including the physical description of the system as well as
- the behavioral and other factors necessary to provide a complete and comprehens
-ive description of the NCS.
+This document covers the functional and non-functional requirements of the
+ NCS including the physical description of the system as well as the behavioral
+ and other factors necessary to provide a complete and comprehensive description
+ of the NCS.
 \end_layout
 
 \begin_layout Subsection
@@ -260,53 +260,19 @@ Overview
 \end_layout
 
 \begin_layout Standard
-The user demographic for the Smart Home is primarily elderly and disabled
+The user demographic of the Smart Home is primarily elderly and disabled
  people.
  This particular demographic is often scared by a myriad of different software
- tools for CNS systems.
+ applications for CNS systems.
  These pre-existing software solutions are often far too complex and not
- specifically suited to the unique needs of our user demographic.
+ specifically suited to the unique needs of this user demographic.
  At the same time our users are faced with potential decline in cognitive
- function and an ever increasing set of appointments to doctors and other
- senior activities as well as new dietary needs (such as low cholesterol
- diets, diabetic concerns, etc.).
+ function and an ever increasing set of medical appointments and other senior
+ activities as well as new dietary needs (such as low cholesterol diets,
+ diabetic concerns, etc.).
  These increasing needs coupled with a desire to continue to be independent
  underlay the requirements and design of the entire Smart Home as well as
  the CNS specifically.
-\end_layout
-
-\begin_layout Standard
-Currently the state of products for calendering systems mainly focus on
- businuess scheduling and are targeted at a younger more technicaly proficiant
- demographic.
- Examples of this include Microsoft's Outlook, the Google Calander, and
- 
-\begin_inset Quotes eld
-\end_inset
-
-smart phone
-\begin_inset Quotes erd
-\end_inset
-
- scheduleing.
- These applications do not have the required level of simplicity nor the
- desired integration to the Smart Home System.
-\end_layout
-
-\begin_layout Standard
-Notification Systems...
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Standard
-I am not sure what to write about here...
- any Ideas folks?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body
