@@ -33,6 +33,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -45,24 +46,172 @@ Specific Requirements
 External Interface Requirements
 \end_layout
 
+\begin_layout Subsubsection
+User Interfaces
+\end_layout
+
+\begin_layout Standard
+accesability , universality, reachability
+\end_layout
+
+\begin_layout Standard
+Input methods : Touch screen, Mobile Device, Voice Recognizer, Remote controls,
+ Motion Detector
+\end_layout
+
+\begin_layout Standard
+Output methods : TV, Mobile Device, Voice, Hologram
+\end_layout
+
+\begin_layout Standard
+User Interface is composed of input/output devices.
+\end_layout
+
+\begin_layout Standard
+Touch screen rqmts: unscrachable, finger controlable, multi touchable.
+\end_layout
+
+\begin_layout Standard
+Mobile Device: small, attachable, compatible across different devices.
+\end_layout
+
+\begin_layout Standard
+Voice Recognizer: accuracy, noise cancelation
+\end_layout
+
+\begin_layout Standard
+Remote controls: simple, big button, universality
+\end_layout
+
+\begin_layout Subsubsection
+Hardware Interfaces
+\end_layout
+
+\begin_layout Standard
+Sensors : RFID(location), motion, fire(smoke), thermal, CO-detector, Body
+ sensors(blood pressure, glucometer level, spirometer, pulse oximeter, weight
+ scale), 
+\end_layout
+
+\begin_layout Standard
+Actuators: auto door, light switch, spinkler, auto window, alarm(audible,
+ visible).
+\end_layout
+
+\begin_layout Standard
+Home Server, client computer
+\end_layout
+
+\begin_layout Subsubsection
+Software Interfaces
+\end_layout
+
+\begin_layout Standard
+NCS is a subsystem of the smart home system.
+\end_layout
+
+\begin_layout Standard
+compatible data format (iCal, XML..)
+\end_layout
+
+\begin_layout Standard
+compatible protocol (between components or systems)
+\end_layout
+
+\begin_layout Subsubsection
+Communication Interfaces
+\end_layout
+
+\begin_layout Standard
+Internet, PSTN, 
+\end_layout
+
+\begin_layout Standard
+Costumer workstation shall be connected to the local development network.
+ 
+\end_layout
+
+\begin_layout Standard
+Customer workstation shall be internet capable.
+ 
+\end_layout
+
+\begin_layout Standard
+Customer workstation shall have USB connection slots available.
+\end_layout
+
+\begin_layout Standard
+System shall connect with the telephone lines.
+ 
+\end_layout
+
 \begin_layout Subsection
 Classes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/ClassDiagram1.png
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Performance requirements 
 \end_layout
 
+\begin_layout Standard
+Realiability/Dependability
+\end_layout
+
+\begin_layout Standard
+fault-tolerance, self-recoverable, do-no-harm ethical code
+\end_layout
+
+\begin_layout Standard
+Security
+\end_layout
+
+\begin_layout Standard
+Able to detect/resist intrusion, firewall/IDS, user access/privilege control,
+ logging
+\end_layout
+
+\begin_layout Standard
+Availability
+\end_layout
+
+\begin_layout Standard
+7/24 operations, short response time - no delay, 
+\end_layout
+
+\begin_layout Standard
+Maintainability
+\end_layout
+
+\begin_layout Standard
+Development shall follow coding standard / good practices such as documenting,
+ commenting, etc
+\end_layout
+
 \begin_layout Subsection
 Design Constraints 
 \end_layout
 
-\begin_layout Subsection
-Software System Attributes 
+\begin_layout Standard
+The sub system's design shall be compatible with current design of Smart
+ Home Architecture.
 \end_layout
 
 \begin_layout Subsection
 Other Requirements 
+\end_layout
+
+\begin_layout Standard
+NONE
 \end_layout
 
 \end_body
