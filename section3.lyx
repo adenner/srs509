@@ -167,20 +167,119 @@ Hardware Interfaces
 \end_layout
 
 \begin_layout Standard
-Sensors : RFID(location), motion, fire(smoke), thermal, CO-detector, Body
- sensors(blood pressure, glucometer level, spirometer, pulse oximeter, weight
- scale), 
+Basically NCS has sensors to get data and actuators to give a physical service.
+ To handle getting data and make a service, NCS has a main computer so-called
+ Home Server and also terminal so-called client computer to privides an
+ user interface.
 \end_layout
 
 \begin_layout Standard
-Actuators: auto door, light switch, spinkler, auto window, alarm(audible,
- visible).
+Sensors :
 \end_layout
 
+\begin_layout Itemize
+RFID(location)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+RFID and location sensors check user's position in Smart Home environment.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Motion
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Motion sensor catches user's motion by detects hand motion, eye direction,
+ etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Smoke, thermal, CO-detector
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Smoke, thermal and CO-detector sensors detect fire.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Body sensors(blood pressure, glucometer level, spirometer, pulse oximeter,
+ weight scale)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Body sensors is essential to check the customer's health status.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
-Home Server, client computer
+Actuators:
 \end_layout
 
+\begin_layout Itemize
+Auto door
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Openning and closing a door is challenge for eldary and disability people.
+ Auto door provides convienence for them.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Light switch
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Based on user's location and behavior, light system can be smart.
+ The system turn on/off lights through the light switch.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Spinkler
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+When the system dectects fire, an initial action is very important to prevent
+ tragedy.
+ Sprinkler system provides water to extinguish fire.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Auto window
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+As auto door, auto window provides automatic open/close functions for a
+ window.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Alarm(audible, visible)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If the system detects safey, security or emergency situation, the system
+ alert it through the audible and visiable alarm actuators.
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection
 Software Interfaces
 \end_layout
@@ -209,25 +308,21 @@ The Notification system also shall use an XML file format for comunication
 Communication Interfaces
 \end_layout
 
-\begin_layout Standard
-Internet, PSTN, 
-\end_layout
-
-\begin_layout Standard
+\begin_layout Itemize
 Costumer workstation shall be connected to the local development network.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Customer workstation shall be internet capable.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Customer workstation shall have USB connection slots available.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 System shall connect with the telephone lines.
  
 \end_layout
