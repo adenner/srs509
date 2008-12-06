@@ -263,13 +263,48 @@ Concept of Operations
 \end_layout
 
 \begin_layout Standard
+The system will not only help users in daily tasks such as scheduling, shopping,
+ it also protect an user inside the house with health care and nutrion system
+ and security of the house.
+ The system has an easy-to-use interface and is configurable.
+ The system is fault tolerant i.e in the worst case the system does not do
+ any harm to users.
+ With an interactive interface, the system can visualize concepts and communicat
+e with users in friendly and understandable ways.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/ClassDiagram1.png
 	scale 50
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Standard
+The class diagram shows basic concepts of our system in a class perspective
+ view.
+ There are two main classes, NotificationSystem and CalendarSystem.
+ These classes manage notification and calendaring function respectively.
+ Both classes extend Degrade class that detects system hazards and change
+ a mode of the system to degraded mode.
+ Notifier class manages notifications and alarms to send out and uses Prioritize
+r class to give priority to notifications and alarms.
+ Configuration class provides an interface and functions to configure the
+ system.
+ Both CalendaringSystem and NotificationSystem uses Notifier and Configuration
+ classes.
+ CalendaringSystem class uses classes such as Planner for planning schedule
+ such as heal plan, food plan, exercise plan, etc, Scheduler for schdueling,
+ and Consult for getting medical consultation services.
+ NotificationSystem class uses classes such as Pre/ProActive, Monitoring
+ , and Sensor.
+ NotificationSystem detects safety, medical, health, security issues and
+ notifies it to users and service providers such as a hospital, police,
+ or fire station.
 \end_layout
 
 \begin_layout Standard
@@ -280,18 +315,6 @@ Concept of Operations
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-The system will not only help users in daily tasks such as scheduling, shopping,
- it also protect an user inside the house with health care and nutrion system
- and security of the house.
- The system has an easy-to-use interface and is configurable.
- The system is fault tolerant i.e in the worst case the system does not do
- any harm to users.
- With an interactive interface, the system can visualize concepts and communicat
-e with users in friendly and understandable ways.
- 
 \end_layout
 
 \begin_layout Subsection
