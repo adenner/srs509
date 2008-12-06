@@ -51,38 +51,117 @@ User Interfaces
 \end_layout
 
 \begin_layout Standard
-accesability , universality, reachability
+The primary goals of the NCS user interfaces are accesability, universality,
+ and reachability.
+ The user interface is comprised of input and output devices.
+ The input devices shall have the following components:
 \end_layout
+
+\begin_layout Itemize
+Touch screen
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The touch screen interface must be unscrachable, finger controlable, and
+ multi touchable.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Mobile Device
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The mobile device interface must be small, attachable
+\begin_inset Note Note
+status open
 
 \begin_layout Standard
-Input methods : Touch screen, Mobile Device, Voice Recognizer, Remote controls,
- Motion Detector
+what does this mean?
 \end_layout
 
+\end_inset
+
+, and compatible across different devices.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Voice Recognition
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The voice recognition system must accurately understand commands and, be
+ able to handle noisy environmnets.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Remote controls
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The remote control must be simple, have big buttons, and have universal
+ compatability with devices in the smart home.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Motion Detector
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The motion detector must be able to accurately detect motion with out error.
+ It also must be able to operate in low and no light conditions.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
-Output methods : TV, Mobile Device, Voice, Hologram
+The NCS user interface shall also support the following output methods:
 \end_layout
 
-\begin_layout Standard
-User Interface is composed of input/output devices.
+\begin_layout Itemize
+TV
 \end_layout
 
-\begin_layout Standard
-Touch screen rqmts: unscrachable, finger controlable, multi touchable.
+\begin_deeper
+\begin_layout Itemize
+The television output device must be able to display information in a large
+ and easy to read format.
+ 
 \end_layout
 
-\begin_layout Standard
-Mobile Device: small, attachable, compatible across different devices.
+\end_deeper
+\begin_layout Itemize
+Mobile Device 
 \end_layout
 
-\begin_layout Standard
-Voice Recognizer: accuracy, noise cancelation
+\begin_deeper
+\begin_layout Itemize
+The mobile device output must be able to display Wireless Markup Language
+ (WML) pages as well as recieve SMS text message notifications.
+ 
 \end_layout
 
-\begin_layout Standard
-Remote controls: simple, big button, universality
+\end_deeper
+\begin_layout Itemize
+Voice
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+The voice output system must be able to accurately announce messages.
+ The system also must be configurable and have a selection of voices as
+ many of the users of the system suffer from forms of hearing loss in some
+ frequancies.
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection
 Hardware Interfaces
 \end_layout
@@ -107,15 +186,23 @@ Software Interfaces
 \end_layout
 
 \begin_layout Standard
-NCS is a subsystem of the smart home system.
+As the NCS is a subsystem of the Smart Home System, the NCS shall follow
+ the standards set forth for the SHS software interfaces.
+ Furthermore, the NCS shall provide an a standerdized API and protocal that
+ will enable other subsystems of the smart home to communicate with it.
+ 
 \end_layout
 
 \begin_layout Standard
-compatible data format (iCal, XML..)
+The Calendering System shall use the ical file format as defined in RFC
+ 2445 as its data format for transfering information between itself and
+ the rest of the smart home system as well as external systems as defined
+ in section 3.1.4.
 \end_layout
 
 \begin_layout Standard
-compatible protocol (between components or systems)
+The Notification system also shall use an XML file format for comunication
+ with the rest of the home.
 \end_layout
 
 \begin_layout Subsubsection
