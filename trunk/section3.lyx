@@ -342,41 +342,229 @@ Classes
 \end_layout
 
 \begin_layout Subsection
-Performance requirements 
+PERFORMANCE REQUIREMENTS
 \end_layout
 
 \begin_layout Standard
-Realiability/Dependability
+This sections specify performance requirements for calendering and notification
+ sub systems:
+\end_layout
+
+\begin_layout Itemize
+UI Transisition: The information tranfers between any devices (sensors/actutors)
+ with main system should not more than 3s.
+\end_layout
+
+\begin_layout Itemize
+Data access time: The system should access any data from database in reasonable
+ time.
+\end_layout
+
+\begin_layout Itemize
+Startup Time: The time between system is reseted and normally operated should
+ be less than 10s.
+\end_layout
+
+\begin_layout Itemize
+Interoperability: The system shall work smoothly with other smart home systems.
+\end_layout
+
+\begin_layout Subsection
+SOFTWARE SYSTEM ATTRIBUTES
+\end_layout
+
+\begin_layout Subsubsection
+Realiability/Dependability 
 \end_layout
 
 \begin_layout Standard
-fault-tolerance, self-recoverable, do-no-harm ethical code
+The list beblow describes the requirement of reliability for the calendering
+ and notification sub-systems
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+Mean-Time-Between-Faulture: The failure rate of two sub-system must be below
+ 1 times/month.
+\end_layout
+
+\begin_layout Itemize
+Fault-Tolerance: Sub-system must have a backup copy to continue opertaion
+ in case the primary system fails.
+\end_layout
+
+\begin_layout Itemize
+Display data accuracy: The information displayed to users via user interface
+ must be correct and prompt.
+\end_layout
+
+\begin_layout Itemize
+User setting accuracy: The information about user's preferences of system
+ must be consistent, reliable and up-to-date.
+\end_layout
+
+\begin_layout Itemize
+Log accuracy: The log of everyday operation should be updated by the end
+ of day and backed up on the weekend.
+\end_layout
+
+\begin_layout Itemize
+Operation accuracy: Two subsystem must control hardware equipments like
+ sensors and actuators precisely and safely.
+\end_layout
+
+\begin_layout Subsubsection
 Security
 \end_layout
 
 \begin_layout Standard
-Able to detect/resist intrusion, firewall/IDS, user access/privilege control,
- logging
+The list below describes the system requirement about security:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+Information confidentiality: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+All information about users should be kept secret by strict information
+ protection policy,
+\end_layout
+
+\begin_layout Itemize
+All infomation is classified according to clearance level and user's priviledge.
+\end_layout
+
+\begin_layout Itemize
+Never store plain password, and auto-remember user password.
+\end_layout
+
+\begin_layout Itemize
+Restrict the number of reentering password simultineously.
+\end_layout
+
+\begin_layout Itemize
+Using some password protect hardware device like dongle.
+\end_layout
+
+\begin_layout Itemize
+Implement User Access Control mechanism.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Information Integerity: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series medium
+The information
+\series default
+ can be only modified/deleted by users with specific clearance level.
+\end_layout
+
+\begin_layout Itemize
+The system is able to detect many unauthorized access, counter password-guessing
+ technique, defend from outside attacks.
+\end_layout
+
+\begin_layout Itemize
+The system shall always synchronize data between prime-copy and back-up
+ copy in every short period.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Information Availability:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The system must provide information to right user with enough priviledge
+ in timely manner.
+\end_layout
+
+\begin_layout Itemize
+Always have a backup plan in every weak/month.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
 Availability
 \end_layout
 
 \begin_layout Standard
-7/24 operations, short response time - no delay, 
+The list below decribes availability requirement:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+The system shall provide requested service in 24/7
+\end_layout
+
+\begin_layout Itemize
+The response time of the system when a request arrive should be prompt and
+ precise.
+\end_layout
+
+\begin_layout Subsubsection
 Maintainability
 \end_layout
 
 \begin_layout Standard
-Development shall follow coding standard / good practices such as documenting,
- commenting, etc
+The list below decribes maintainability requirement:
+\end_layout
+
+\begin_layout Itemize
+The system shall have a backup system to be upgraded parallel/online when
+ a new device comes or some modification taken by technician.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The display device can be removed when an user still can issuse command
+\end_layout
+
+\begin_layout Itemize
+A new sensor can be added to the system without any conflict in communication
+ and tranmission.
+\end_layout
+
+\begin_layout Itemize
+Every sensor and actuator can be configured and controller via GUI.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+With very low probability, the system will introduce bugs when updating
+ changes.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The audit team can review source code and run code in simulation devices.
+\end_layout
+
+\begin_layout Itemize
+The system is able to update new code with any disruption.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Repairability:
+\end_layout
+
+\begin_layout Standard
+The list below decribes repairability requirement:
+\end_layout
+
+\begin_layout Itemize
+The repair time shall be quick.
+\end_layout
+
+\begin_layout Itemize
+The system is able to be diagnosed and replaced errorneous part when still
+ running.
 \end_layout
 
 \begin_layout Subsection
@@ -384,8 +572,34 @@ Design Constraints
 \end_layout
 
 \begin_layout Standard
-The sub system's design shall be compatible with current design of Smart
- Home Architecture.
+The list below decribes about design constrains in some aspects:
+\end_layout
+
+\begin_layout Itemize
+Coding Constraint: Two sub systems shall be developed using Java language.
+\end_layout
+
+\begin_layout Itemize
+Memory Constraint: The memory for all two subsystem shall not be larger
+ than 1Gb.
+\end_layout
+
+\begin_layout Itemize
+Line of code constraint: The total number of LOC should less than 100K.
+\end_layout
+
+\begin_layout Itemize
+Functionality constraint: Two sub system shall provide ONLY functions required
+ in the requirement 
+\end_layout
+
+\begin_layout Itemize
+Environment constraint: sub systems shall be developed under Windows NT
+ OS.
+\end_layout
+
+\begin_layout Itemize
+The interface between components shall be consistent and well described.
 \end_layout
 
 \begin_layout Subsection
