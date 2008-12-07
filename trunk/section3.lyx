@@ -280,6 +280,17 @@ If the system detects safey, security or emergency situation, the system
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+These sensors and actuators are connected to the home server computer through
+ OSGi(Open Services Gateway Initiative) interface.
+ OSGi supports component-based software.
+ OSGi is an open industry framework and service-oriented architecture.
+ OSGi also provides deployment of services in platforms.
+ OSGi defines a framework to mange bundles (units of distribution) and the
+ services they export Services can be obtained by querying the framework
+ through a set of properties 
+\end_layout
+
 \begin_layout Subsubsection
 Software Interfaces
 \end_layout
@@ -309,22 +320,18 @@ Communication Interfaces
 \end_layout
 
 \begin_layout Itemize
-Costumer workstation shall be connected to the local development network.
+The system should be connected to the Internat or LAN.
  
 \end_layout
 
 \begin_layout Itemize
-Customer workstation shall be internet capable.
+The system shall connect with the telephone lines.
  
 \end_layout
 
 \begin_layout Itemize
-Customer workstation shall have USB connection slots available.
-\end_layout
-
-\begin_layout Itemize
-System shall connect with the telephone lines.
- 
+The system shall has a connection with an emergency protocol which is connected
+ to a hostpital, police, and fire station.
 \end_layout
 
 \begin_layout Subsection
