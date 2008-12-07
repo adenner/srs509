@@ -51,7 +51,7 @@ User Interfaces
 \end_layout
 
 \begin_layout Standard
-The primary goals of the NCS user interfaces are accesability, universality,
+The primary goals of the NCS user interfaces are accessibility, universality,
  and reachability.
  The user interface is comprised of input and output devices.
  The input devices shall have the following components:
@@ -74,17 +74,8 @@ Mobile Device
 
 \begin_deeper
 \begin_layout Itemize
-The mobile device interface must be small, attachable
-\begin_inset Note Note
-status open
-
-\begin_layout Standard
-what does this mean?
-\end_layout
-
-\end_inset
-
-, and compatible across different devices.
+The mobile device interface must be small, attachable, and compatible across
+ different devices.
 \end_layout
 
 \end_deeper
@@ -106,7 +97,7 @@ Remote controls
 \begin_deeper
 \begin_layout Itemize
 The remote control must be simple, have big buttons, and have universal
- compatability with devices in the smart home.
+ compatibility with devices in the smart home.
 \end_layout
 
 \end_deeper
@@ -144,7 +135,7 @@ Mobile Device
 \begin_deeper
 \begin_layout Itemize
 The mobile device output must be able to display Wireless Markup Language
- (WML) pages as well as recieve SMS text message notifications.
+ (WML) pages as well as receive SMS text message notifications.
  
 \end_layout
 
@@ -158,7 +149,7 @@ Voice
 The voice output system must be able to accurately announce messages.
  The system also must be configurable and have a selection of voices as
  many of the users of the system suffer from forms of hearing loss in some
- frequancies.
+ frequencies.
 \end_layout
 
 \end_deeper
@@ -169,7 +160,7 @@ Hardware Interfaces
 \begin_layout Standard
 Basically NCS has sensors to get data and actuators to give a physical service.
  To handle getting data and make a service, NCS has a main computer so-called
- Home Server and also terminal so-called client computer to privides an
+ Home Server and also terminal so-called client computer to provides an
  user interface.
 \end_layout
 
@@ -230,8 +221,8 @@ Auto door
 
 \begin_deeper
 \begin_layout Itemize
-Openning and closing a door is challenge for eldary and disability people.
- Auto door provides convienence for them.
+Opening and closing a door is challenge for elderly and disability people.
+ Auto door provides convenience for them.
 \end_layout
 
 \end_deeper
@@ -247,12 +238,12 @@ Based on user's location and behavior, light system can be smart.
 
 \end_deeper
 \begin_layout Itemize
-Spinkler
+Sprinkler
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-When the system dectects fire, an initial action is very important to prevent
+When the system detects fire, an initial action is very important to prevent
  tragedy.
  Sprinkler system provides water to extinguish fire.
 \end_layout
@@ -275,8 +266,8 @@ Alarm(audible, visible)
 
 \begin_deeper
 \begin_layout Itemize
-If the system detects safey, security or emergency situation, the system
- alert it through the audible and visiable alarm actuators.
+If the system detects safety, security or emergency situation, the system
+ alert it through the audible and visible alarm actuators.
 \end_layout
 
 \end_deeper
@@ -298,20 +289,20 @@ Software Interfaces
 \begin_layout Standard
 As the NCS is a subsystem of the Smart Home System, the NCS shall follow
  the standards set forth for the SHS software interfaces.
- Furthermore, the NCS shall provide an a standerdized API and protocal that
+ Furthermore, the NCS shall provide an a standardized API and protocol that
  will enable other subsystems of the smart home to communicate with it.
  
 \end_layout
 
 \begin_layout Standard
 The Calendering System shall use the ical file format as defined in RFC
- 2445 as its data format for transfering information between itself and
+ 2445 as its data format for transferring information between itself and
  the rest of the smart home system as well as external systems as defined
  in section 3.1.4.
 \end_layout
 
 \begin_layout Standard
-The Notification system also shall use an XML file format for comunication
+The Notification system also shall use an XML file format for communication
  with the rest of the home.
 \end_layout
 
@@ -320,7 +311,7 @@ Communication Interfaces
 \end_layout
 
 \begin_layout Itemize
-The system should be connected to the Internat or LAN.
+The system should be connected to the Internet or LAN.
  
 \end_layout
 
@@ -331,7 +322,7 @@ The system shall connect with the telephone lines.
 
 \begin_layout Itemize
 The system shall has a connection with an emergency protocol which is connected
- to a hostpital, police, and fire station.
+ to a hospital, police, and fire station.
 \end_layout
 
 \begin_layout Subsection
@@ -358,7 +349,7 @@ This sections specify performance requirements for calendering and notification
 \end_layout
 
 \begin_layout Itemize
-UI Transisition: The information tranfers between any devices (sensors/actutors)
+UI Transition: The information transfers between any devices (sensors/actuators)
  with main system should not more than 3s.
 \end_layout
 
@@ -368,7 +359,7 @@ Data access time: The system should access any data from database in reasonable
 \end_layout
 
 \begin_layout Itemize
-Startup Time: The time between system is reseted and normally operated should
+Start-up Time: The time between system is reset and normally operated should
  be less than 10s.
 \end_layout
 
@@ -381,21 +372,21 @@ SOFTWARE SYSTEM ATTRIBUTES
 \end_layout
 
 \begin_layout Subsubsection
-Realiability/Dependability 
+Reliability/Dependability 
 \end_layout
 
 \begin_layout Standard
-The list beblow describes the requirement of reliability for the calendering
+The list below describes the requirement of reliability for the calendering
  and notification sub-systems
 \end_layout
 
 \begin_layout Itemize
-Mean-Time-Between-Faulture: The failure rate of two sub-system must be below
+Mean-Time-Between-Failure: The failure rate of two sub-system must be below
  1 times/month.
 \end_layout
 
 \begin_layout Itemize
-Fault-Tolerance: Sub-system must have a backup copy to continue opertaion
+Fault-Tolerance: Sub-system must have a backup copy to continue operation
  in case the primary system fails.
 \end_layout
 
@@ -438,7 +429,7 @@ All information about users should be kept secret by strict information
 \end_layout
 
 \begin_layout Itemize
-All infomation is classified according to clearance level and user's priviledge.
+All information is classified according to clearance level and user's privilege.
 \end_layout
 
 \begin_layout Itemize
@@ -446,7 +437,7 @@ Never store plain password, and auto-remember user password.
 \end_layout
 
 \begin_layout Itemize
-Restrict the number of reentering password simultineously.
+Restrict the number of reentering password simultaneously.
 \end_layout
 
 \begin_layout Itemize
@@ -459,7 +450,7 @@ Implement User Access Control mechanism.
 
 \end_deeper
 \begin_layout Itemize
-Information Integerity: 
+Information Integrity: 
 \end_layout
 
 \begin_deeper
@@ -488,7 +479,7 @@ Information Availability:
 
 \begin_deeper
 \begin_layout Itemize
-The system must provide information to right user with enough priviledge
+The system must provide information to right user with enough privilege
  in timely manner.
 \end_layout
 
@@ -502,7 +493,7 @@ Availability
 \end_layout
 
 \begin_layout Standard
-The list below decribes availability requirement:
+The list below describes availability requirement:
 \end_layout
 
 \begin_layout Itemize
@@ -519,7 +510,7 @@ Maintainability
 \end_layout
 
 \begin_layout Standard
-The list below decribes maintainability requirement:
+The list below describes maintainability requirement:
 \end_layout
 
 \begin_layout Itemize
@@ -529,12 +520,12 @@ The system shall have a backup system to be upgraded parallel/online when
 
 \begin_deeper
 \begin_layout Itemize
-The display device can be removed when an user still can issuse command
+The display device can be removed when an user still can issues command
 \end_layout
 
 \begin_layout Itemize
 A new sensor can be added to the system without any conflict in communication
- and tranmission.
+ and transmission.
 \end_layout
 
 \begin_layout Itemize
@@ -562,7 +553,7 @@ Repairability:
 \end_layout
 
 \begin_layout Standard
-The list below decribes repairability requirement:
+The list below describes repairability requirement:
 \end_layout
 
 \begin_layout Itemize
@@ -570,7 +561,7 @@ The repair time shall be quick.
 \end_layout
 
 \begin_layout Itemize
-The system is able to be diagnosed and replaced errorneous part when still
+The system is able to be diagnosed and replaced erroneous part when still
  running.
 \end_layout
 
@@ -579,7 +570,7 @@ Design Constraints
 \end_layout
 
 \begin_layout Standard
-The list below decribes about design constrains in some aspects:
+The list below describes about design constrains in some aspects:
 \end_layout
 
 \begin_layout Itemize

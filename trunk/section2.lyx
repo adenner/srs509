@@ -46,8 +46,8 @@ Overall description
 This section seeks to clarify and describe the requirements of Smart Home
  NCS.
  Basically, the system provides schedule management, notification and planning.
- Since the target system is Smart Home and the target user is eldery or
- disabled people, it has design constratins and specfic features different
+ Since the target system is Smart Home and the target user is elderly or
+ disabled people, it has design constrains and specific features different
  than general NCS.
  For example, a user interface should not to be difficult.
  It should be simple and easy to understand.
@@ -57,10 +57,10 @@ This section seeks to clarify and describe the requirements of Smart Home
 
 \begin_layout Standard
 The NCS of the Smart Home has a number of crucial functionalities.
- Calendaring functions give specific schudeling plan for eldery people such
- as appoinments for a doctor, nurse, community event, and medecine and meal
- plan.
- Notification fucntions provides information about safety, emergency situation,
+ Calendaring functions give specific scheduling plan for elderly people
+ such as appointments for a doctor, nurse, community event, and medicine
+ and meal plan.
+ Notification functions provides information about safety, emergency situation,
  health status, and security.
  
 \end_layout
@@ -244,7 +244,7 @@ University of Florida: “The RERC-Tech-Aging is testing currently available
 Niagara Framework: The Niagara Framework, developed by Tridium Software,
  is a Java-based framework that allows development of smart homes using
  different components from different manufactures.
- Niagara was developed using JavaBeans that allows every component to be
+ Niagara was developed using Java Beans that allows every component to be
  treated as an object.
  Niagara uses an adapter development pattern so that every object, regardless
  of manufacture, communication standard, or software can run from a standard
@@ -264,8 +264,8 @@ Concept of Operations
 
 \begin_layout Standard
 The system will not only help users in daily tasks such as scheduling, shopping,
- it also protect an user inside the house with health care and nutrion system
- and security of the house.
+ it also protect an user inside the house with health care and neutrino
+ system and security of the house.
  The system has an easy-to-use interface and is configurable.
  The system is fault tolerant i.e in the worst case the system does not do
  any harm to users.
@@ -287,7 +287,7 @@ e with users in friendly and understandable ways.
 \begin_layout Standard
 The class diagram shows basic concepts of our system in a class perspective
  view.
- There are two main classes, NotificationSystem and CalendarSystem.
+ There are two main classes, Notification System and Calendar System.
  These classes manage notification and calendaring function respectively.
  Both classes extend Degrade class that detects system hazards and change
  a mode of the system to degraded mode.
@@ -295,14 +295,14 @@ The class diagram shows basic concepts of our system in a class perspective
 r class to give priority to notifications and alarms.
  Configuration class provides an interface and functions to configure the
  system.
- Both CalendaringSystem and NotificationSystem uses Notifier and Configuration
+ Both Calendaring System and Notification System uses Notifier and Configuration
  classes.
- CalendaringSystem class uses classes such as Planner for planning schedule
- such as heal plan, food plan, exercise plan, etc, Scheduler for schdueling,
+ Calendaring System class uses classes such as Planner for planning schedule
+ such as heal plan, food plan, exercise plan, etc, Scheduler for scheduling,
  and Consult for getting medical consultation services.
- NotificationSystem class uses classes such as Pre/ProActive, Monitoring
+ Notification System class uses classes such as Pre/Proactive, Monitoring
  , and Sensor.
- NotificationSystem detects safety, medical, health, security issues and
+ Notification System detects safety, medical, health, security issues and
  notifies it to users and service providers such as a hospital, police,
  or fire station.
 \end_layout
@@ -373,7 +373,7 @@ The system is on and the user wants to make/modify a schedule
 \begin_layout Description
 
 \series bold
-Postconditions:
+Post conditions:
 \series default
  The user has made/modified a schedule and the system records changes in
  scheduling database.
@@ -396,7 +396,7 @@ The user informs the system to make a schedule with given preference like
 
 \begin_layout Enumerate
 The system identifies which time and place is available and suitable (e.g
- wheather conditions, traffic)for user's normal schedule
+ weather conditions, traffic)for user's normal schedule
 \end_layout
 
 \begin_layout Enumerate
@@ -466,7 +466,7 @@ Medical Monitor
 \begin_layout Description
 
 \series bold
-Titile
+Title
 \series default
 : Medical Monitor
 \end_layout
@@ -498,7 +498,7 @@ The system is on and all sensors are in working condition
 \begin_layout Description
 
 \series bold
-Postconditions: 
+Post conditions: 
 \series default
 The information about health status of users is obtained.
 \end_layout
@@ -519,7 +519,7 @@ The system receives medical information from all sensors such as blood pressure,
 \end_layout
 
 \begin_layout Enumerate
-The system checks the consistancy with the information in previous period.
+The system checks the consistency with the information in previous period.
 \end_layout
 
 \begin_layout Enumerate
@@ -571,7 +571,7 @@ The system is on.
 \begin_layout Description
 
 \series bold
-Postconditions:
+Post conditions:
 \series default
 The house and the customer are safe.
 \end_layout
@@ -579,7 +579,7 @@ The house and the customer are safe.
 \begin_layout Description
 
 \series bold
-Basicflow:
+Basic flow:
 \end_layout
 
 \begin_layout Enumerate
@@ -630,15 +630,15 @@ Alternate:
 \end_layout
 
 \begin_layout Subsubsection
-Nutrion Monitor/Planner
+Nutrition Monitor/Planner
 \end_layout
 
 \begin_layout Description
 
 \series bold
-Titile
+Title
 \series default
-: Nutrion Monitor/Planner
+: Nutrition Monitor/Planner
 \end_layout
 
 \begin_layout Description
@@ -957,7 +957,7 @@ flow:
 
 \begin_deeper
 \begin_layout Standard
-3a) If the system can not continue operation, the service center detectes
+3a) If the system can not continue operation, the service center detects
  failure through a heart-beat technique.
 \end_layout
 
@@ -967,11 +967,11 @@ Priortizer
 \end_layout
 
 \begin_layout Description
-Title: Prioritizer
+Title: Priortizer
 \end_layout
 
 \begin_layout Description
-Description: The prioritizer gives a function that prioritize notifications
+Description: The prioritize gives a function that prioritize notifications
  and alarms.
 \end_layout
 
@@ -1362,7 +1362,7 @@ Pre
 \begin_inset Formula $\:$
 \end_inset
 
-condition An event has occured that requires intervention from the user,
+condition An event has occurred that requires intervention from the user,
  caretaker, or emergency personnel depending on level of severity 
 \end_layout
 
@@ -1429,7 +1429,7 @@ Actor does not respond to notification
 \end_layout
 
 \begin_layout Enumerate
-System escelates notification to the next higher level of notification.
+System escalates notification to the next higher level of notification.
 \end_layout
 
 \end_deeper
