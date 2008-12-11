@@ -339,8 +339,436 @@ Classes
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
+ClassDiagram
+\end_layout
 
+\begin_layout Subsubsection
+Congifuration 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename I:/Study/2008 5-Fall/Project/Diagrams/Class-Configuration.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- notificationInstance : an instance of Notification class.
+\end_layout
+
+\begin_layout Standard
+- calendarInstance : an instance of Calendar class.
+\end_layout
+
+\begin_layout Standard
+- userAccessLevel : depends on user levels, configuration access modes are
+ different.
+ e.g.
+ user and system engineer have different userAccessLevel.
+\end_layout
+
+\begin_layout Standard
+- password : if userAccessLevel is higher than a system engineer, it needs
+ password.
+\end_layout
+
+\begin_layout Standard
++ configNotiSys() : configure a notification system.
+\end_layout
+
+\begin_layout Standard
++ configCalSys() : configure a calculation system.
+\end_layout
+
+\begin_layout Standard
++ resetConfigNotiSys() : reset to default settings of a notification system.
+\end_layout
+
+\begin_layout Standard
++ resetConfigCalSys() : reset to default settings of a calendaring system.
+\end_layout
+
+\begin_layout Standard
++ showMenus() : show menus for configuration
+\end_layout
+
+\begin_layout Standard
++ notifySysConfigured() : after configured, notify it to the user.
+\end_layout
+
+\begin_layout Subsubsection
+Medical consult 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename I:/Study/2008 5-Fall/Project/Diagrams/Class-Consult.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- connection : an instance of Connection Class.
+ Connection Class manages network, phone call connections.
+\end_layout
+
+\begin_layout Standard
+- healthStatus : an instance of HealthStatus.
+ It has an information of the user's current health status.
+\end_layout
+
+\begin_layout Standard
+- consultSchedule : Consulting schedule instance.
+\end_layout
+
+\begin_layout Standard
++ callCenter() : call the health center through phone call.
+\end_layout
+
+\begin_layout Standard
++ checkConnectionAvailable() : check available connections such as network
+ and phone line.
+\end_layout
+
+\begin_layout Standard
++ disconnect() : after consulting, disconnect the connection.
+\end_layout
+
+\begin_layout Standard
++ connect() : connect to the network to send health status.
+\end_layout
+
+\begin_layout Standard
++ sendHealthStatus() : send health status of current user via network.
+\end_layout
+
+\begin_layout Standard
++ getConsultSchedule() : getConsultingSchedule information.
+\end_layout
+
+\begin_layout Subsubsection
+Degraded function mode 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename I:/Study/2008 5-Fall/Project/Diagrams/Class-Degraded.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- systemStatus : represents current system status.
+\end_layout
+
+\begin_layout Standard
+- hazardLevel : if it is normal status, hazardLevel is 0.
+ If there is a hazard shows the hazard level from 1 to 10.
+\end_layout
+
+\begin_layout Standard
+- degradedLevel : If there is a hazard, change the system mode to this degradedL
+evel.
+\end_layout
+
+\begin_layout Standard
++ hazardMonitoringThread() : Thread method to constantly check current system
+ status.
+\end_layout
+
+\begin_layout Standard
++ detectHazard() : a method to detect a hazard.
+ 
+\end_layout
+
+\begin_layout Standard
++ changeMode() : Change a mode to the designated degradedLevel.
+\end_layout
+
+\begin_layout Subsubsection
+Prioritizer
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename I:/Study/2008 5-Fall/Project/Diagrams/Class-Prioritizer.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notifier
+\end_layout
+
+\begin_layout Standard
+- messageQueue : a queue for saving messages to be notified.
+\end_layout
+
+\begin_layout Standard
+- prioritizer : an instance of Prioritizer class.
+\end_layout
+
+\begin_layout Standard
++ Notify() : notify the message.
+\end_layout
+
+\begin_layout Standard
++ putMsg() : put message into the queue.
+\end_layout
+
+\begin_layout Standard
++ getMSg() : get message from the queue.
+\end_layout
+
+\begin_layout Standard
+Prioritizer 
+\end_layout
+
+\begin_layout Standard
+- rules : a list of rules to give a proper priority to the message.
+\end_layout
+
+\begin_layout Standard
+- getRules() : load rules from the rule XML file.
+\end_layout
+
+\begin_layout Standard
+- Prioritize() : based on rules, give a proper priority to the message.
+\end_layout
+
+\begin_layout Subsection
+Scheduler
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/jaygarl/Desktop/diagram/diagram/SchedulerClassDiagram.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Name : The contact's name
+\end_layout
+
+\begin_layout Itemize
+date: the date for meeting
+\end_layout
+
+\begin_layout Itemize
+place: the place of meeting
+\end_layout
+
+\begin_layout Itemize
+time: time for meeting
+\end_layout
+
+\begin_layout Itemize
+reason : why have to meet
+\end_layout
+
+\begin_layout Itemize
+CreateNew(): Create new meeting
+\end_layout
+
+\begin_layout Itemize
+Modify(): Modify scheduled meeting
+\end_layout
+
+\begin_layout Itemize
+Search(): Search for a specific meeting
+\end_layout
+
+\begin_layout Itemize
+UpdateData(): Update database
+\end_layout
+
+\begin_layout Subsection
+Medical Monitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/jaygarl/Desktop/diagram/diagram/MedicalMonitorClassDiagram.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+currentStatus: stored current health status of user
+\end_layout
+
+\begin_layout Itemize
+TimeUpdate: Specific the period of update info
+\end_layout
+
+\begin_layout Itemize
+TimeOut: Specific the time out waiting user's response
+\end_layout
+
+\begin_layout Itemize
+Alarm(): Alarm
+\end_layout
+
+\begin_layout Itemize
+GetInfo() : get user's health status
+\end_layout
+
+\begin_layout Itemize
+Warning(): Warning user
+\end_layout
+
+\begin_layout Itemize
+CheckConsistency() : Check health status user based on information get from
+ sensor
+\end_layout
+
+\begin_layout Itemize
+Pressure : User's pressure
+\end_layout
+
+\begin_layout Itemize
+GlucometerLevel: User's Glucometer
+\end_layout
+
+\begin_layout Itemize
+Spirometer: User's spirometer
+\end_layout
+
+\begin_layout Itemize
+Pulse Level: User's pulse level
+\end_layout
+
+\begin_layout Itemize
+Weight Scale: User's weight
+\end_layout
+
+\begin_layout Subsection
+Security Monitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/jaygarl/Desktop/diagram/diagram/SecurityMonitorClassDiagram.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+policenumber: store police emergency number - default: 911
+\end_layout
+
+\begin_layout Itemize
+timeAlarm: set a period of alarm 
+\end_layout
+
+\begin_layout Itemize
+defaultAction: true - carry on the protection steps for user and house.
+\end_layout
+
+\begin_layout Itemize
+securityLevel: set specific level of protection
+\end_layout
+
+\begin_layout Itemize
+SmokeLevel: 
+\end_layout
+
+\begin_layout Itemize
+Temp : house's temperature 
+\end_layout
+
+\begin_layout Itemize
+InstrutionDetection : Detect instrution 
+\end_layout
+
+\begin_layout Itemize
+SmokeLevel
+\end_layout
+
+\begin_layout Itemize
+WeatherDetector : Check weather in that area
+\end_layout
+
+\begin_layout Itemize
+TimeUpdate: Specific time of update info
+\end_layout
+
+\begin_layout Itemize
+GetSensorInfo()
+\end_layout
+
+\begin_layout Itemize
+SetAlarmTime()
+\end_layout
+
+\begin_layout Itemize
+CallPolice()
+\end_layout
+
+\begin_layout Itemize
+NotifyUser()
+\end_layout
+
+\begin_layout Itemize
+SetSecurityLevel()
+\end_layout
+
+\begin_layout Itemize
+SetSmokeLevel()
+\end_layout
+
+\begin_layout Subsection
+Nutrition Monitor/Planner
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/jaygarl/Desktop/diagram/diagram/NutritionClassDiagram.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+DietMode: Diet modes for user
+\end_layout
+
+\begin_layout Itemize
+Period: Time for current diet mode effective
+\end_layout
+
+\begin_layout Itemize
+changeDietMode(): change to another diet mode
+\end_layout
+
+\begin_layout Itemize
+GetHealthInfo() : Get user's health status
+\end_layout
+
+\begin_layout Itemize
+CalculateHealthStatus
+\end_layout
+
+\begin_layout Itemize
+NotifyUser() : warning user if anything inconsistency.
 \end_layout
 
 \begin_layout Subsection
