@@ -1,0 +1,108 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+References
+\end_layout
+
+\begin_layout Enumerate
+M.
+ E.
+ Bratman, “Intentions, Plans, and Practical Reason,” Harvard University
+ Press, Cambridge, MA, 1987.
+ 
+\end_layout
+
+\begin_layout Enumerate
+BDI Agents and AgentSpeak(L)(Romelia Plesa,PhD Candidate, University of
+ Ottawa)
+\end_layout
+
+\begin_layout Enumerate
+A BDI Agent-Based Software Process(Chang-Hyun Jo, California State University
+ Fullerton, USA, Jeffery M.
+ Einhorn, University of North Dakota, USA.
+ AgentSpeak(L): BDI Agents speak out in a logical computable language (Anand
+ S.
+ Rao) 
+\end_layout
+
+\begin_layout Enumerate
+http://jason.sourceforge.net/mini-tutorial/getting-started/ 
+\end_layout
+
+\begin_layout Enumerate
+P.
+ R.
+ Cohen and H.
+ J.
+ Levesque, “Intention is choice with commitment,” Artificial Intelligence
+ , vol.
+ 42, is.
+ 2-3, pp.213-261, 1990.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Bordini, R.
+ H., Hübner, J.
+ F.
+ and Vieira, R., “Jason and the Golden Fleece of agent-oriented programming.”
+ In R.
+ H.
+ Bordini, M.
+ Dastani, J.
+ Dix, and A.
+ El Fallah Seghrouchni, editors, Multi-Agent Programming: Languages, Platforms
+ and Applications, chapter 1, pp.
+ 3–37,Springer-Verlag, 2005.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Rao, A.
+ S.
+ “AgentSpeak(L): BDI agents speak out in a logical computable language”,
+ In Proceedings of the 7th European Workshop on Modelling Autonomous Agents
+ in A Multi-Agent World (MAAMAW’96,), pp.
+ 42-55, 1996 
+\end_layout
+
+\end_body
+\end_document
