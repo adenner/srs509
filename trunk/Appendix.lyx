@@ -1,0 +1,564 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Subsection
+Appendix A
+\end_layout
+
+\begin_layout Subsubsection
+BDI Logic
+\end_layout
+
+\begin_layout Paragraph
+Goal 
+\end_layout
+
+\begin_layout Itemize
+Surveying BDI logic and its language and tools.
+ 
+\end_layout
+
+\begin_layout Itemize
+Investigating the way of service planning for agents in a smart home.
+ 
+\end_layout
+
+\begin_layout Itemize
+Improve an evolvable context-aware system, which adapt to environmental
+ changes (home environment, user intentions) in real time manner.
+ 
+\end_layout
+
+\begin_layout Standard
+This project will investigate the way of service planning for multiple agents
+ in a smart home.
+ In this system, we introduce BDI logic to make a service invocation plan
+ by synthesizing home electronics.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Introduction of BDI
+\end_layout
+
+\begin_layout Standard
+Bratman [1] proposed Belief, Desire, Intention (BDI) model based on belief,
+ desire and intention as mental states.
+ BDI models of agents have been widely researched by AI researchers.
+ The purpose of these models is to characterize agents using anthropomorphic
+ notions, such as mental states and actions.
+ formally defined using logical frameworks that allow theorists to analyze,
+ specify and verify rational agents [6].
+ 
+\end_layout
+
+\begin_layout Paragraph
+What is BDI[2]?
+\end_layout
+
+\begin_layout Description
+Beliefs: Beliefs represent the characteristics of the environment.
+ Beliefs are updated appropriately after each sensing action.
+ Beliefs can be viewed as the 
+\emph on
+informative
+\emph default
+ component of the system.
+ 
+\end_layout
+
+\begin_layout Description
+Desires: Desires contain the information about the objectives to be accomplished
+, the priorities and payoffs associated with the various objectives.
+ Desires can be thought as representing the 
+\emph on
+motivational
+\emph default
+ state of the system.
+\end_layout
+
+\begin_layout Description
+Intentions: Intentions represent the currently chosen course of action (the
+ output of the most recent call to the selection function).
+ Intentions capture the 
+\emph on
+deliberative
+\emph default
+ component of the system.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Why BDI?
+\end_layout
+
+\begin_layout Itemize
+Best known and best studied model of practical reasoning agents.
+ 
+\end_layout
+
+\begin_layout Itemize
+BDI model combines a respectable philosophical model of human practical
+ reasoning.
+\end_layout
+
+\begin_layout Itemize
+A number of implementations, several successful applications the now-famous
+ fault diagnosis system for the space shuttle, as well as factory process
+ control systems and business process management
+\end_layout
+
+\begin_layout Itemize
+An elegant abstract logical semantics, which have been taken up and elaborated
+ upon widely within the agent research community.
+ 
+\end_layout
+
+\begin_layout Paragraph
+AgentSpeak(L)
+\end_layout
+
+\begin_layout Itemize
+Attempt to bridge the gap between theory and practice 
+\end_layout
+
+\begin_layout Itemize
+A model that shows a one-to-one correspondence between the model theory,
+ proof theory and the abstract interpreter.
+ 
+\end_layout
+
+\begin_layout Itemize
+Natural extension of logic programming for the BDI agent architecture 
+\end_layout
+
+\begin_layout Itemize
+Based on a restricted first-order language with events and actions.
+\end_layout
+
+\begin_layout Itemize
+The behavior of the agent is dictated by the programs written in AgentSpeak(L).
+ 
+\end_layout
+
+\begin_layout Paragraph
+Jason[2]
+\end_layout
+
+\begin_layout Itemize
+a fully-fledged interpreter for AgentSpeak(L) 
+\end_layout
+
+\begin_layout Itemize
+many extensions, providing a very expressive programming language for agents.
+ 
+\end_layout
+
+\begin_layout Itemize
+allows configuration of a multi-agent system to run on various hosts.
+ 
+\end_layout
+
+\begin_layout Itemize
+implemented in Java (thus it is multi-platform) 
+\end_layout
+
+\begin_layout Itemize
+available Open Source and is distributed under GNU LGPL.
+ 
+\end_layout
+
+\begin_layout Itemize
+http://jason.sourceforge.net/ 
+\end_layout
+
+\begin_layout Paragraph
+Our Example
+\end_layout
+
+\begin_layout Standard
+\InsetSpace \space{}
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Standard
+Agent Script
+\end_layout
+
+\begin_layout Standard
+\InsetSpace \space{}
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+/* Plans */
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++time(T) : smokeTime(ST) & (T > ST + 5) <- !alarm(smoke).
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++time(T) : ovenTime(ST) & (T > ST + 10) <- !alarm(oven).
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++time(T) : mvTime(ST) & (T > ST + 13) <- !alarm(mv).
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++time(T) : alarmTime(R,ST) & (T > ST + 7) <- !callFireman(R).
+\end_layout
+
+\begin_layout Standard
+\InsetSpace \space{}
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+//oven & MV 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++oven(on) : time(T) & not ovenTime(Q) <- +ovenTime(T).
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++mv(on) : time(T) & not mvTime(Q) <- +mvTime(T).
+\end_layout
+
+\begin_layout Standard
+\InsetSpace \space{}
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+//smoke 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++smoke : time(T) & not smokeTime(Q) <- +smokeTime(T).
+\end_layout
+
+\begin_layout Standard
+\InsetSpace \space{}
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+//alarm for smoke 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++!alarm(R) : loc(home) <- alarmenv; .print("ALARM!!!!! ", R); !saveAlarm(R).
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++!alarm(R) : loc(outside) <- !callFireman(R).
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++!alarm(R).
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++!saveAlarm(R) : time(T) & not alarmTime(Q) <- +alarmTime(R,T).
+\end_layout
+
+\begin_layout Standard
+\InsetSpace \space{}
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+//heat 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++heat <- !callFireman(R).
+\end_layout
+
+\begin_layout Standard
+\InsetSpace \space{}
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+//call 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
++!callFireman(R): true <- .print("call because of ", R); callenv; .send(fireman,te
+ll,fire).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Rhapsody
+\end_layout
+
+\begin_layout Paragraph
+What Rhapsody can do?
+\end_layout
+
+\begin_layout Itemize
+A environment for Systems and Software Development 
+\end_layout
+
+\begin_layout Itemize
+Flexible design environments supporting SysML, UML 2.0, DoDAF, and Domain
+ Specific Languages (Rational Rose import and XMI support) 
+\end_layout
+
+\begin_layout Itemize
+Integrated Requirements modeling, traceability and analysis e.g., Lifecycle
+ traceability and analysis 
+\end_layout
+
+\begin_layout Itemize
+Small and large team collaboration e.g., Model-based differencing and merging
+ 
+\end_layout
+
+\begin_layout Itemize
+Design for Testability 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Model simulation 
+\end_layout
+
+\begin_layout Itemize
+Requirements Based testing 
+\end_layout
+
+\begin_layout Itemize
+Auto test generation 
+\end_layout
+
+\begin_layout Itemize
+Embedded target model level debugging 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Application generation 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+C, C++, Java, Ada 
+\end_layout
+
+\begin_layout Itemize
+Code visualization and reverse engineering 
+\end_layout
+
+\begin_layout Itemize
+Integration with Eclipse-based IDEs
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Model Driven Development
+\end_layout
+
+\begin_layout Standard
+It starts out with making a requirements document and a series of models
+ using UML, SysML or a similar modeling language.
+ These models and requirements are then used directly for the generation
+ of code.
+ MDD tools use models as the primary means of development.
+ One of the extremely useful tools it has is its 
+\emph on
+animator
+\emph default
+.
+ It allows you to view an 
+\emph on
+animated version of many diagrams
+\emph default
+ in real time as the program is running.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Use Animation to Validate the Model
+\end_layout
+
+\begin_layout Standard
+Rhapsody animates the model by executing the code generated with instrumentation
+ for classes, operations, and associations.
+ Animated Sequence Diagram, State Machine Diagram, and Activity Diagram
+ help design-level debugging.
+ E.g., step through the model, set and clear breakpoints, inject events, and
+ generate an output trace.
+\end_layout
+
+\begin_layout Paragraph
+UML by Example: Home Alarm System
+\end_layout
+
+\begin_layout Standard
+This example is from Rhapsody sample projects.
+ It has a following functions.
+\end_layout
+
+\begin_layout Itemize
+Door and movement sensors
+\end_layout
+
+\begin_layout Itemize
+Arm/Disarm based on 4 digit code
+\end_layout
+
+\begin_layout Itemize
+Code may be modified
+\end_layout
+
+\begin_layout Itemize
+Timeout to allow entering/exiting house
+\end_layout
+
+\begin_layout Itemize
+Indication lights
+\end_layout
+
+\begin_layout Itemize
+Siren 
+\end_layout
+
+\begin_layout Standard
+Diagrams
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/rhapsodyex1.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/rhapsodyex2.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/rhapsodyex3.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
