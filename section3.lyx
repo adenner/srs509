@@ -741,6 +741,145 @@ SetSmokeLevel()
 \end_layout
 
 \begin_layout Subsection
+User Level Control
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/class diagram/UserLevelControl.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- option : an instance of the setting class.
+\end_layout
+
+\begin_layout Standard
++ getSettingList() : get list of available settings for modification.
+\end_layout
+
+\begin_layout Standard
++ getSetting(user: userid): get list of available settings for user
+\end_layout
+
+\begin_layout Standard
++ setSetting(conf:setting) : commit changes to database.
+\end_layout
+
+\begin_layout Subsection
+Caretaker Control
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/class diagram/CaretakerControl.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- id : an instance of Userid, this contains user identification.
+\end_layout
+
+\begin_layout Standard
+option : an instance of the setting class.
+\end_layout
+
+\begin_layout Standard
++ getUsers(): get list of available users.
+\end_layout
+
+\begin_layout Standard
++ getSettingList() : get list of available settings for modification.
+\end_layout
+
+\begin_layout Standard
++ getSetting(user: userid): get list of available settings for user
+\end_layout
+
+\begin_layout Standard
++ setSetting(conf:setting) : commit changes to database.
+\end_layout
+
+\begin_layout Subsection
+Proactive Alert
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/class diagram/proactivealert.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- Trigger : which sensor triggered the notification.
+\end_layout
+
+\begin_layout Standard
+- event: the event that the sensor is reporting.
+\end_layout
+
+\begin_layout Standard
+- priority : how important the message is.
+\end_layout
+
+\begin_layout Standard
++ trigger(s, e, p) : called by the Active mode of the notification system
+ informs us which sensor triggered, what the event was that caused the trigger,
+ for example smoke sensor and what priority is the message.
+\end_layout
+
+\begin_layout Standard
++respond(userid): the user or caretaker responds to the notification
+\end_layout
+
+\begin_layout Standard
++getStatus(): this returns the status of the notification
+\end_layout
+
+\begin_layout Subsection
+Reactive Alert
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/class diagram/proactivealert.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- event: event is a text stream in the ical file format
+\end_layout
+
+\begin_layout Standard
++trigger(): this function is called by the calender system with the ical
+ notification statement
+\end_layout
+
+\begin_layout Standard
++respond(userid): the user or caretaker responds to the notification
+\end_layout
+
+\begin_layout Standard
++getStatus(): this returns the status of the notification
+\end_layout
+
+\begin_layout Subsection
 Nutrition Monitor/Planner
 \end_layout
 
