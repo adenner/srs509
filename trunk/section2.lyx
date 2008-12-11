@@ -347,6 +347,11 @@ Scheduler
 \end_layout
 
 \begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/jaygarl/Desktop/diagram/diagram/SchedulerUseCase.png
+
+\end_inset
+
 
 \end_layout
 
@@ -478,6 +483,15 @@ The system get confirmation about the modifications and store in the database
 Medical Monitor
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/jaygarl/Desktop/diagram/diagram/MedicalMonitorUseCase.png
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 
 \series bold
@@ -553,6 +567,15 @@ If there is no response from user in specific amount of time, the system
 
 \begin_layout Subsubsection
 Security/Fire monitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/jaygarl/Desktop/diagram/diagram/SecurityMonitorUseCase.png
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -655,6 +678,15 @@ Flow:
 
 \begin_layout Subsubsection
 Nutrition Monitor/Planner
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/jaygarl/Desktop/diagram/diagram/NutritionUseCase.png
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -775,6 +807,15 @@ If everything is fine, the system schedules and orders suitable food for
 Configuration System
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename I:/Study/2008 5-Fall/Project/Diagrams/Configure.png
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Title: Configuration System
 \end_layout
@@ -856,6 +897,15 @@ The system provides a richer interface to configure the system.
 Medical Consult
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename I:/Study/2008 5-Fall/Project/Diagrams/Consult.png
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Title: Medical Consult
 \end_layout
@@ -933,6 +983,15 @@ flow:
 Degraded Function Mode
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename I:/Study/2008 5-Fall/Project/Diagrams/Degraded.png
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Title: Degraded Function Mode
 \end_layout
@@ -1000,6 +1059,15 @@ Flow:
 \end_deeper
 \begin_layout Subsubsection
 Priortizer
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename I:/Study/2008 5-Fall/Project/Diagrams/Prioritizer.png
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
