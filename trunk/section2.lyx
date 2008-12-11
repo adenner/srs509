@@ -813,7 +813,7 @@ Configuration System
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename I:/Study/2008 5-Fall/Project/Diagrams/Configure.png
+	filename Diagrams/Configure.png
 	scale 50
 
 \end_inset
@@ -904,7 +904,7 @@ Medical Consult
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename I:/Study/2008 5-Fall/Project/Diagrams/Consult.png
+	filename Diagrams/Consult.png
 
 \end_inset
 
@@ -990,7 +990,7 @@ Degraded Function Mode
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename I:/Study/2008 5-Fall/Project/Diagrams/Degraded.png
+	filename Diagrams/Degraded.png
 
 \end_inset
 
@@ -1068,7 +1068,7 @@ Priortizer
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename I:/Study/2008 5-Fall/Project/Diagrams/Prioritizer.png
+	filename Diagrams/Prioritizer.png
 	scale 50
 
 \end_inset
