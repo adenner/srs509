@@ -33,15 +33,16 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
 
-\begin_layout Subsection
+\begin_layout Section
 Appendix A
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 BDI Logic
 \end_layout
 
@@ -390,7 +391,7 @@ ll,fire).
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Rhapsody
 \end_layout
 
