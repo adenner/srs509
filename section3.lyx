@@ -349,7 +349,7 @@ Congifuration
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename I:/Study/2008 5-Fall/Project/Diagrams/Class-Configuration.jpg
+	filename Diagrams/Class-Configuration.jpg
 
 \end_inset
 
@@ -406,7 +406,7 @@ Medical consult
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename I:/Study/2008 5-Fall/Project/Diagrams/Class-Consult.jpg
+	filename Diagrams/Class-Consult.jpg
 	scale 50
 
 \end_inset
@@ -459,7 +459,7 @@ Degraded function mode
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename I:/Study/2008 5-Fall/Project/Diagrams/Class-Degraded.jpg
+	filename Diagrams/Class-Degraded.jpg
 	scale 50
 
 \end_inset
@@ -501,7 +501,7 @@ Prioritizer
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename I:/Study/2008 5-Fall/Project/Diagrams/Class-Prioritizer.jpg
+	filename Diagrams/Class-Prioritizer.jpg
 	scale 50
 
 \end_inset
@@ -555,7 +555,7 @@ Scheduler
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/jaygarl/Desktop/diagram/diagram/SchedulerClassDiagram.png
+	filename Diagrams/SchedulerClassDiagram.png
 	scale 50
 
 \end_inset
@@ -605,7 +605,7 @@ Medical Monitor
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/jaygarl/Desktop/diagram/diagram/MedicalMonitorClassDiagram.png
+	filename Diagrams/MedicalMonitorClassDiagram.png
 	scale 50
 
 \end_inset
@@ -668,7 +668,7 @@ Security Monitor
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/jaygarl/Desktop/diagram/diagram/SecurityMonitorClassDiagram.png
+	filename Diagrams/SecurityMonitorClassDiagram.png
 	scale 50
 
 \end_inset
@@ -746,7 +746,7 @@ Nutrition Monitor/Planner
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/jaygarl/Desktop/diagram/diagram/NutritionClassDiagram.png
+	filename Diagrams/NutritionClassDiagram.png
 	scale 50
 
 \end_inset
