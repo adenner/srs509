@@ -15,11 +15,11 @@
 \font_tt_scale 100
 \graphics default
 \paperfontsize default
-\spacing single
-\papersize default
+\spacing onehalf
+\papersize letterpaper
 \use_geometry true
 \use_amsmath 1
-\use_esint 1
+\use_esint 0
 \cite_engine basic
 \use_bibtopic false
 \paperorientation portrait
@@ -44,12 +44,12 @@
 \begin_body
 
 \begin_layout Title
-Software Requirements Document for Smart Home Notification and Calendering
- System
+Software Requirements and Specification Document for Smart Home Notification
+ and Calendering System
 \end_layout
 
 \begin_layout Author
-Team 2 Hojun Jaygarl, Nam Pham, Andrew Denner
+Team 2: Hojun Jaygarl, Nam Pham, Andrew Denner
 \end_layout
 
 \begin_layout Standard

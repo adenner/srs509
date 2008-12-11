@@ -58,7 +58,7 @@ The primary goals of the NCS user interfaces are accessibility, universality,
 \end_layout
 
 \begin_layout Itemize
-Touch screen
+Touch Screen
 \end_layout
 
 \begin_deeper
@@ -86,12 +86,12 @@ Voice Recognition
 \begin_deeper
 \begin_layout Itemize
 The voice recognition system must accurately understand commands and, be
- able to handle noisy environmnets.
+ able to handle noisy environments.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Remote controls
+Remote Controls
 \end_layout
 
 \begin_deeper
@@ -311,7 +311,7 @@ Communication Interfaces
 \end_layout
 
 \begin_layout Itemize
-The system should be connected to the Internet or LAN.
+The system shall be connected to the Internet/LAN.
  
 \end_layout
 
@@ -332,15 +332,19 @@ Classes
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/ClassDiagram1.png
-	scale 40
+	scale 45
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Subsection
-PERFORMANCE REQUIREMENTS
+Performance Requirements
 \end_layout
 
 \begin_layout Standard
@@ -349,26 +353,49 @@ This sections specify performance requirements for calendering and notification
 \end_layout
 
 \begin_layout Itemize
-UI Transition: The information transfers between any devices (sensors/actuators)
- with main system should not more than 3s.
+UI Transition:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+The information transfers between any devices (sensors/actuators) with main
+ system should not more than 3s.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Data access time: The system should access any data from database in reasonable
- time.
+Data access time: 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+The system should access any data from database in reasonable time.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Start-up Time: The time between system is reset and normally operated should
- be less than 10s.
+Start-up Time:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+The time between system is reset and normally operated should be less than
+ 10s.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Interoperability: The system shall work smoothly with other smart home systems.
+Interoperability: 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+The system shall work smoothly with other smart home systems.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
-SOFTWARE SYSTEM ATTRIBUTES
+Software System Attributes
 \end_layout
 
 \begin_layout Subsubsection
@@ -381,35 +408,70 @@ The list below describes the requirement of reliability for the calendering
 \end_layout
 
 \begin_layout Itemize
-Mean-Time-Between-Failure: The failure rate of two sub-system must be below
- 1 times/month.
+Mean-Time-Between-Failure: 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+The failure rate of two sub-system must be below 1 times/month.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Fault-Tolerance: Sub-system must have a backup copy to continue operation
- in case the primary system fails.
+Fault-Tolerance:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Sub-system must have a backup copy to continue operation in case the primary
+ system fails.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Display data accuracy: The information displayed to users via user interface
- must be correct and prompt.
+Display data accuracy: 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+The information displayed to users via user interface must be correct and
+ prompt.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-User setting accuracy: The information about user's preferences of system
- must be consistent, reliable and up-to-date.
+User setting accuracy: 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+The information about user's preferences of system must be consistent, reliable
+ and up-to-date.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Log accuracy: The log of everyday operation should be updated by the end
- of day and backed up on the weekend.
+Log accuracy:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+The log of everyday operation should be updated by the end of day and backed
+ up on the weekend.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Operation accuracy: Two subsystem must control hardware equipments like
- sensors and actuators precisely and safely.
+Operation accuracy:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Two subsystem must control hardware equipments like sensors and actuators
+ precisely and safely.
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection
 Security
 \end_layout
@@ -497,7 +559,7 @@ The list below describes availability requirement:
 \end_layout
 
 \begin_layout Itemize
-The system shall provide requested service in 24/7
+The system shall provide the requested service with 24/7avalability.
 \end_layout
 
 \begin_layout Itemize
@@ -514,7 +576,7 @@ The list below describes maintainability requirement:
 \end_layout
 
 \begin_layout Itemize
-The system shall have a backup system to be upgraded parallel/online when
+The system shall have a backup system to be upgraded parallel/on-line when
  a new device comes or some modification taken by technician.
 \end_layout
 
@@ -534,8 +596,7 @@ Every sensor and actuator can be configured and controller via GUI.
 
 \end_deeper
 \begin_layout Itemize
-With very low probability, the system will introduce bugs when updating
- changes.
+The system will introduce bugs with very low probability when updating changes.
 \end_layout
 
 \begin_deeper
@@ -549,20 +610,20 @@ The system is able to update new code with any disruption.
 
 \end_deeper
 \begin_layout Subsubsection
-Repairability:
+Repair-ability:
 \end_layout
 
 \begin_layout Standard
-The list below describes repairability requirement:
+The list below describes repair-ability requirement:
 \end_layout
 
 \begin_layout Itemize
-The repair time shall be quick.
+The system shall have a quick repair down time.
 \end_layout
 
 \begin_layout Itemize
-The system is able to be diagnosed and replaced erroneous part when still
- running.
+The system shall be able to be diagnose and replace malfunctioning parts
+ while still running.
 \end_layout
 
 \begin_layout Subsection
@@ -574,28 +635,56 @@ The list below describes about design constrains in some aspects:
 \end_layout
 
 \begin_layout Itemize
-Coding Constraint: Two sub systems shall be developed using Java language.
+Coding Constraint:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Two sub systems shall be developed using Java language.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Memory Constraint: The memory for all two subsystem shall not be larger
- than 1Gb.
+Memory Constraint:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+The memory for all two subsystem shall not be larger than 1Gb.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Line of code constraint: The total number of LOC should less than 100K.
+Line of code constraint:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+The total number of LOC should less than 100K.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Functionality constraint: Two sub system shall provide ONLY functions required
- in the requirement 
+Functionality constraint:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Two sub system shall provide ONLY functions required in the requirement
+ 
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Environment constraint: sub systems shall be developed under Windows NT
- OS.
+Environment constraint:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+sub systems shall be developed under Windows NT OS.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 The interface between components shall be consistent and well described.
 \end_layout

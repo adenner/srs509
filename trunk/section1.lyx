@@ -54,7 +54,7 @@ This document details both the functional and nonfunctional requirements
 
 \begin_layout Standard
 This document serves as a contract between the team members of the Smart
- Home project(SHP) at Iowa State University to ensure fulfillment of project
+ Home Project(SHP) at Iowa State University to ensure fulfillment of project
  requirements and to describe the inner workings of the NCS and it's interaction
 s with the SHP.
 \end_layout
@@ -79,7 +79,7 @@ Definitions, acronyms, abbreviations
 <lyxtabular version="3" rows="8" columns="2">
 <features>
 <column alignment="center" valignment="top" leftline="true" width="0">
-<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<column alignment="left" valignment="top" leftline="true" rightline="true" width="4in">
 <row topline="true" bottomline="true">
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -114,7 +114,7 @@ Smart Home (SH)
 \begin_inset Text
 
 \begin_layout Standard
-
+Home Automation system that provides Comfort, Convenience and Safety
 \end_layout
 
 \end_inset
@@ -134,7 +134,8 @@ Notification System
 \begin_inset Text
 
 \begin_layout Standard
-
+A combination of software and hardware that provides a means of delivering
+ a message to a set of recipients.
 \end_layout
 
 \end_inset
@@ -154,7 +155,7 @@ Calendering System
 \begin_inset Text
 
 \begin_layout Standard
-
+A software that helps people to manage and plan schedules
 \end_layout
 
 \end_inset

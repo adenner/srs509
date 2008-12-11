@@ -39,7 +39,7 @@
 \begin_body
 
 \begin_layout Section
-Overall description
+Overall Description
 \end_layout
 
 \begin_layout Standard
@@ -56,7 +56,7 @@ This section seeks to clarify and describe the requirements of Smart Home
 \end_layout
 
 \begin_layout Standard
-The NCS of the Smart Home has a number of crucial functionalities.
+The NCS of the Smart Home has a number of crucial functionality.
  Calendaring functions give specific scheduling plan for elderly people
  such as appointments for a doctor, nurse, community event, and medicine
  and meal plan.
@@ -263,12 +263,12 @@ Concept of Operations
 \end_layout
 
 \begin_layout Standard
-The system will not only help users in daily tasks such as scheduling, shopping,
- it also protect an user inside the house with health care and neutrino
- system and security of the house.
+The system will not only help users in daily tasks such as scheduling and
+ shopping, it also protects a user inside the house with a health care and
+ nutrition system and protects the security of the house.
  The system has an easy-to-use interface and is configurable.
- The system is fault tolerant i.e in the worst case the system does not do
- any harm to users.
+ The system is fault tolerant, for example, in the worst case the system
+ does not do any harm to users.
  With an interactive interface, the system can visualize concepts and communicat
 e with users in friendly and understandable ways.
  
@@ -277,7 +277,7 @@ e with users in friendly and understandable ways.
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/ClassDiagram1.png
-	scale 50
+	scale 55
 
 \end_inset
 
@@ -293,24 +293,25 @@ The class diagram shows basic concepts of our system in a class perspective
  a mode of the system to degraded mode.
  Notifier class manages notifications and alarms to send out and uses Prioritize
 r class to give priority to notifications and alarms.
- Configuration class provides an interface and functions to configure the
- system.
- Both Calendaring System and Notification System uses Notifier and Configuration
- classes.
- Calendaring System class uses classes such as Planner for planning schedule
- such as heal plan, food plan, exercise plan, etc, Scheduler for scheduling,
- and Consult for getting medical consultation services.
- Notification System class uses classes such as Pre/Proactive, Monitoring
- , and Sensor.
- Notification System detects safety, medical, health, security issues and
- notifies it to users and service providers such as a hospital, police,
- or fire station.
+ The configuration class provides an interface and functions to configure
+ the system.
+ Both the Calendaring System and Notification System uses the Notifier and
+ Configuration classes.
+ The Calendaring System class uses classes such as Planner for planning
+ schedule such as health plan, food plan and, exercise plan, the Scheduler
+ for scheduling, and the Consult class for getting medical consultation
+ services.
+ The Notification System class uses classes such as Reactive and Proactive
+ Alert and notification systems, Monitoring , and Sensors.
+ The Notification System detects safety, medical, health, security issues
+ and notifies users and service providers such as a hospital, police, or
+ fire station.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/DeploymentDiagram1.png
-	scale 40
+	scale 45
 
 \end_inset
 
@@ -334,7 +335,7 @@ Product functions
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/CalenderingSystem.png
-	scale 50
+	scale 55
 
 \end_inset
 
@@ -343,6 +344,10 @@ Product functions
 
 \begin_layout Subsubsection
 Scheduler
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Description
@@ -358,7 +363,7 @@ Description
 \end_layout
 
 \begin_layout Description
-Actor: user
+Actor: User
 \end_layout
 
 \begin_layout List
@@ -452,7 +457,17 @@ The system get confirmation about the modifications and store in the database
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/Schedule.png
-	scale 30
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/Schedule2.png
+	scale 60
 
 \end_inset
 
@@ -482,7 +497,7 @@ Description
 \begin_layout Description
 
 \series bold
-Actor: 
+Actors: 
 \series default
 The system and user
 \end_layout
@@ -490,7 +505,11 @@ The system and user
 \begin_layout Description
 
 \series bold
-Preconditions: 
+Pre
+\begin_inset Formula $\:$
+\end_inset
+
+conditions: 
 \series default
 The system is on and all sensors are in working condition
 \end_layout
@@ -539,7 +558,7 @@ Security/Fire monitor
 \begin_layout Description
 
 \series bold
-Titile
+Title
 \series default
 : Security/Fire monitor
 \end_layout
@@ -563,7 +582,11 @@ The system and the user
 \begin_layout Description
 
 \series bold
-Preconditions: 
+Pre
+\begin_inset Formula $\:$
+\end_inset
+
+Conditions: 
 \series default
 The system is on.
 \end_layout
@@ -573,7 +596,7 @@ The system is on.
 \series bold
 Post conditions:
 \series default
-The house and the customer are safe.
+ The house and the customer are safe.
 \end_layout
 
 \begin_layout Description
@@ -600,7 +623,8 @@ After a specific of time without any confirmation from user, the system
 \begin_layout Description
 
 \series bold
-Alternate:
+Alternate\InsetSpace \space{}
+Flow:
 \end_layout
 
 \begin_deeper
@@ -622,7 +646,7 @@ Alternate:
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/firealarm.png
-	scale 35
+	scale 60
 
 \end_inset
 
@@ -730,7 +754,17 @@ If everything is fine, the system schedules and orders suitable food for
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/Nutrition.png
-	scale 30
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/Nutrition2.png
+	scale 60
 
 \end_inset
 
@@ -755,18 +789,18 @@ Actor: User, system engineer, service provider
 
 \begin_layout Description
 Pre\InsetSpace \space{}
-conditions: The system is on and configuration system is available for
+Conditions: The system is on and configuration system is available for
  use.
 \end_layout
 
 \begin_layout Description
 Post\InsetSpace \space{}
-conditions: The system has been configured.
+Conditions: The system has been configured.
 \end_layout
 
 \begin_layout Description
 Basic\InsetSpace \space{}
-flow:
+Flow:
 \end_layout
 
 \begin_layout Enumerate
@@ -787,7 +821,7 @@ The system notifies the customer that the system has been configured.
 
 \begin_layout Description
 Alternate\InsetSpace \space{}
-flow: 
+Flow: 
 \end_layout
 
 \begin_layout Standard
@@ -805,13 +839,13 @@ reword..
 
 \end_inset
 
-The system provides a richer interface to configure system.
+The system provides a richer interface to configure the system.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/SequenceConfiguration.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -819,15 +853,15 @@ The system provides a richer interface to configure system.
 \end_layout
 
 \begin_layout Subsubsection
-Medical consult
+Medical Consult
 \end_layout
 
 \begin_layout Description
-Title: Medical consult
+Title: Medical Consult
 \end_layout
 
 \begin_layout Description
-Description: Consult with a doctor or a nurse about the customer's health
+Description: Consults with a doctor or a nurse about the customer's health
  condition.
 \end_layout
 
@@ -837,13 +871,14 @@ Actor: Customer
 
 \begin_layout Description
 Pre\InsetSpace \space{}
-conditions: System is on and phone and/or network connections is available.
+conditions: The System is on and phone and/or network connections is
+ available.
  
 \end_layout
 
 \begin_layout Description
 Post\InsetSpace \space{}
-conditions: Medical issue has been resolved.
+conditions: The Medical issue has been resolved.
 \end_layout
 
 \begin_layout Description
@@ -874,7 +909,8 @@ flow:
 
 \begin_deeper
 \begin_layout Standard
-2a) If the system has a camera and network connection, use a video conference.
+2a) If the other end of the connection as video conferencing equipment,
+ use a video conference.
 \end_layout
 
 \begin_layout Standard
@@ -886,7 +922,7 @@ flow:
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/SequenceMedicalconsult.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -894,15 +930,15 @@ flow:
 \end_layout
 
 \begin_layout Subsubsection
-Degraded function mode
+Degraded Function Mode
 \end_layout
 
 \begin_layout Description
-Title: Degraded function mode
+Title: Degraded Function Mode
 \end_layout
 
 \begin_layout Description
-Description: Degraded mode keeps system working correctly through possible
+Description: The Degraded mode keeps system working correctly through possible
  system hazard conditions.
  Possible hazards include blackout, network disconnection, sensor or device
  malfunctions and etc.
@@ -914,17 +950,17 @@ Actor: System
 
 \begin_layout Description
 Pre\InsetSpace \space{}
-conditions: The system detects a hazard.
+Conditions: The system detects a hazard.
 \end_layout
 
 \begin_layout Description
 Post\InsetSpace \space{}
-conditions: The system keeps working.
+Conditions: The system keeps working.
 \end_layout
 
 \begin_layout Description
 Basic\InsetSpace \space{}
-flow:
+Flow:
 \end_layout
 
 \begin_layout Enumerate
@@ -943,7 +979,7 @@ Depending on the type of hazard, the system performs the proper actions
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/SequenceDiagram1.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -952,7 +988,7 @@ Depending on the type of hazard, the system performs the proper actions
 
 \begin_layout Description
 Alternate\InsetSpace \space{}
-flow: 
+Flow: 
 \end_layout
 
 \begin_deeper
@@ -971,7 +1007,7 @@ Title: Priortizer
 \end_layout
 
 \begin_layout Description
-Description: The prioritize gives a function that prioritize notifications
+Description: The prioritizer gives a function that prioritize notifications
  and alarms.
 \end_layout
 
@@ -981,17 +1017,17 @@ Actor: System
 
 \begin_layout Description
 Pre\InsetSpace \space{}
-conditions: System has notifications and alarms in queue to be processed.
+Conditions: System has notifications and alarms in queue to be processed.
 \end_layout
 
 \begin_layout Description
 Post\InsetSpace \space{}
-conditions: Process the notifications and alarms based on priority.
+Conditions: Process the notifications and alarms based on priority.
 \end_layout
 
 \begin_layout Description
 Basic\InsetSpace \space{}
-flow:
+Flow:
 \end_layout
 
 \begin_layout Enumerate
@@ -1013,7 +1049,7 @@ The system sends the notifications and alarms based on priority.
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/SequenceDiagram2.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -1025,16 +1061,16 @@ User Level Control
 \end_layout
 
 \begin_layout Description
-Title User Level Control
+Title: User Level Control
 \end_layout
 
 \begin_layout Description
-Description The user desires to make a modification to a setting, or create
+Description: The user desires to make a modification to a setting, or create
  a new event or modify some other setting.
 \end_layout
 
 \begin_layout Description
-Actor Customer
+Actor: Customer
 \end_layout
 
 \begin_layout Description
@@ -1042,8 +1078,8 @@ Pre
 \begin_inset Formula $\:$
 \end_inset
 
-condition The user is a properly authenticated user, and the system is on
- 
+Condition: The user is a properly authenticated user, and the system is
+ on 
 \end_layout
 
 \begin_layout Description
@@ -1051,7 +1087,7 @@ Post
 \begin_inset Formula $\:$
 \end_inset
 
-condition The system is updated with the change to the user's preference
+Condition: The system is updated with the change to the user's preference
 \end_layout
 
 \begin_layout Description
@@ -1117,15 +1153,15 @@ Caretaker Control
 \end_layout
 
 \begin_layout Description
-Title Caretaker Control
+Title: Caretaker Control
 \end_layout
 
 \begin_layout Description
-Description The caretaker desires to make a modification to a user 
+Description: The caretaker desires to make a modification to a user 
 \end_layout
 
 \begin_layout Description
-Actor Caretaker
+Actor: Caretaker
 \end_layout
 
 \begin_layout Description
@@ -1133,7 +1169,7 @@ Pre
 \begin_inset Formula $\:$
 \end_inset
 
-condition The user is a properly authenticated caretaker and the system
+Condition: The user is a properly authenticated caretaker and the system
  is in caretaker mode 
 \end_layout
 
@@ -1142,7 +1178,7 @@ Post
 \begin_inset Formula $\:$
 \end_inset
 
-condition The system is updated with the change to the user's preference
+Condition: The system is updated with the change to the user's preference
 \end_layout
 
 \begin_layout Description
@@ -1188,7 +1224,7 @@ System saves configuration
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/caretakercontrolsequencediagram.png
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -1223,17 +1259,17 @@ Proactive Alert/Notify System
 \end_layout
 
 \begin_layout Description
-Title Proactive Alert/Notify System
+Title: Proactive Alert/Notify System
 \end_layout
 
 \begin_layout Description
-Description The CNS notifies/alerts user/caretaker of a pre-scheduled event.
+Description: The CNS notifies/alerts user/caretaker of a pre-scheduled event.
  An example of this would be notification of the need to take medicine or
  of an appointment
 \end_layout
 
 \begin_layout Description
-Actor Customer, Caretaker
+Actor: Customer, Caretaker
 \end_layout
 
 \begin_layout Description
@@ -1241,8 +1277,8 @@ Pre
 \begin_inset Formula $\:$
 \end_inset
 
-condition A pre scheduled event is about to occur and the system is in a
- ready state
+Condition: A pre scheduled event is about to occur and the system is in
+ a ready state
 \end_layout
 
 \begin_layout Description
@@ -1250,7 +1286,7 @@ Post
 \begin_inset Formula $\:$
 \end_inset
 
-condition The user/caretaker has been notified and acknowledges the event
+Condition: The user/caretaker has been notified and acknowledges the event
  or alert
 \end_layout
 
@@ -1333,7 +1369,7 @@ Caretaker is notified of potential issue
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/ReactiveAleartEventdiagram.png
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -1345,16 +1381,16 @@ Reactive Alert/Notify System
 \end_layout
 
 \begin_layout Description
-Title Reactive Alert/Notify System
+Title: Reactive Alert/Notify System
 \end_layout
 
 \begin_layout Description
-Description The user desires to make a modification to a setting, create
- a new event or some other setting
+Description: The Reactive Alert system notifies user/caretaker/emergency
+ personnel to an event that has just occurred
 \end_layout
 
 \begin_layout Description
-Actor User, Caretaker, Emergency Personnel
+Actor: User, Caretaker, Emergency Personnel
 \end_layout
 
 \begin_layout Description
@@ -1362,7 +1398,7 @@ Pre
 \begin_inset Formula $\:$
 \end_inset
 
-condition An event has occurred that requires intervention from the user,
+Condition: An event has occurred that requires intervention from the user,
  caretaker, or emergency personnel depending on level of severity 
 \end_layout
 
@@ -1371,7 +1407,7 @@ Post
 \begin_inset Formula $\:$
 \end_inset
 
-condition Proper actors notified of issue and activated
+Condition: Proper actors notified of issue and activated
 \end_layout
 
 \begin_layout Description
@@ -1436,7 +1472,7 @@ System escalates notification to the next higher level of notification.
 \begin_layout Standard
 \begin_inset Graphics
 	filename Diagrams/ReactiveAleartEventdiagram.png
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -1447,8 +1483,14 @@ System escalates notification to the next higher level of notification.
 User characteristics
 \end_layout
 
-\begin_layout Subsection
-Constraints
+\begin_layout Standard
+The CNS subsystem, as is the whole smart home, is targeted at elderly and
+ disabled people who still desire to live at home, however need added assistance
+ to function in their every day to day lives.
+ These users do not generally have a high amount of aptitude using computerized
+ systems and are scared by new technology.
+ Finally, they have a myriad of medical and health concerns and other scheduling
+ concerns to keep track of.
 \end_layout
 
 \end_body
