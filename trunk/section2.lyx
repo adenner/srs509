@@ -1135,6 +1135,16 @@ The system sends the notifications and alarms based on priority.
 User Level Control
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/use case/UserLevelControlUseCaseDiagram.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
 Title: User Level Control
 \end_layout
@@ -1225,6 +1235,16 @@ System disregards changes and returns to previous state
 
 \begin_layout Subsubsection
 Caretaker Control
+\end_layout
+
+\begin_layout Description
+\begin_inset Graphics
+	filename Diagrams/use case/CaretakerControlUseCaseDiagram.png
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -1331,6 +1351,16 @@ a.
 
 \begin_layout Subsubsection
 Proactive Alert/Notify System
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/use case/ReactivealeartnotificationsystemUseCaseDiagram.png
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -1453,6 +1483,16 @@ Caretaker is notified of potential issue
 
 \begin_layout Subsubsection
 Reactive Alert/Notify System
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Diagrams/use case/UseCaseDiagram1.png
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
