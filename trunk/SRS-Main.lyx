@@ -528,5 +528,14 @@ preview false
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Include \include{Appendix.lyx}
+preview false
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
