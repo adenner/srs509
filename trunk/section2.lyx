@@ -348,7 +348,7 @@ Scheduler
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/jaygarl/Desktop/diagram/diagram/SchedulerUseCase.png
+	filename Diagrams/SchedulerUseCase.png
 	scale 50
 
 \end_inset
@@ -486,7 +486,7 @@ Medical Monitor
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/jaygarl/Desktop/diagram/diagram/MedicalMonitorUseCase.png
+	filename Diagrams/MedicalMonitorUseCase.png
 	scale 50
 
 \end_inset
@@ -573,7 +573,7 @@ Security/Fire monitor
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/jaygarl/Desktop/diagram/diagram/SecurityMonitorUseCase.png
+	filename Diagrams/SecurityMonitorUseCase.png
 	scale 40
 
 \end_inset
@@ -685,7 +685,7 @@ Nutrition Monitor/Planner
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/jaygarl/Desktop/diagram/diagram/NutritionUseCase.png
+	filename Diagrams/NutritionUseCase.png
 	scale 50
 
 \end_inset
