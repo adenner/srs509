@@ -1,0 +1,171 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Subsection
+Motivation: 
+\end_layout
+
+\begin_layout Standard
+One of important aspects in our NCS subsystemss is checking the feasibility
+ of our models.
+ We decide to choose simulation to verify our models and our subsystems.
+ The main reasons to choose simulation are its lightweight, easy to use
+ and able to use as a storyboarding tool to explicit customers' requirements.
+ There are two level of simulation we carry on in our project:
+\end_layout
+
+\begin_layout Enumerate
+Using simulation at UML model levels to check consistency and safety.
+\end_layout
+
+\begin_layout Enumerate
+Using simulation at subsytem levels to check integerity and perfomance of
+ the whole subsystems.
+\end_layout
+
+\begin_layout Standard
+Our approach can be catergoried as Simulation-based Model Checking.
+ Using simulation in model driven development is currently a hot topic which
+ has been discuessed in many top SE conference like ICSE, OOPSLA, MODELS,
+ TOOLS, etc.
+ There are also alot of tools supporting for model developing such as Microsoft
+ DSL Tools, Eclipse EMF/GMF/oAW, MetaEdit+, Rhapsody, etc.
+ 
+\end_layout
+
+\begin_layout Standard
+In this project, we choose Rhapsody as our tools to simulate and check UML
+ models.
+ Rhapsody has many interesting properties that are suitable for our subsystems:
+\end_layout
+
+\begin_layout Itemize
+Seamless Environment for Systems and Software Development Requirements 
+\end_layout
+
+\begin_layout Itemize
+Modeling Design-level Debugging on Target 
+\end_layout
+
+\begin_layout Itemize
+Directly Deployable C, C++, and Ada Code Generation 
+\end_layout
+
+\begin_layout Itemize
+Automatic Test Vector Generation
+\end_layout
+
+\begin_layout Standard
+In short, Rhapsody animates the model by executing the code generated with
+ instrumentation for classes, operations, and associations.
+ Animated Sequence Diagram, State Machine Diagram, and Activity Diagram
+ help design-level debugging.
+ E.g., step through the model, set and clear breakpoints, inject events, and
+ generate an output trace.
+\end_layout
+
+\begin_layout Standard
+For simulation at the subsystem level (i.e NCS system), we choose BDI models.
+ The purpose of BDI models is to characterize agents using anthropomorphic
+ notions, such as mental states and actions.
+ formally defined using logical frameworks that allow theorists to analyze,
+ specify and verify rational agents [6].
+ The reason choosing BDI models based on four following properties:
+\end_layout
+
+\begin_layout Itemize
+Well-known and studied model of practical reasoning agents.
+ 
+\end_layout
+
+\begin_layout Itemize
+BDI model combines a respectable philosophical model of human practical
+ reasoning.
+\end_layout
+
+\begin_layout Itemize
+A number of implementations, several successful applications the now-famous
+ fault diagnosis system for the space shuttle, as well as factory process
+ control systems and business process management
+\end_layout
+
+\begin_layout Itemize
+An elegant abstract logical semantics, which have been taken up and elaborated
+ upon widely within the agent research community.
+ 
+\end_layout
+
+\begin_layout Standard
+However, BDI models are only thoery model base.
+ We need an language to describe this model and a tool to run it in practice.
+ That why we choose AgentSpeak language and Jason tool to implement BDI
+ model.
+ 
+\end_layout
+
+\begin_layout Standard
+So far, in this project we choose Rhapsody to verify UML models via simulation
+ and AgentSpeak with Jason tool to implement BDI model that are capable
+ of simulating our NCS subsystems.
+\end_layout
+
+\begin_layout Subsection
+Conclusion:
+\end_layout
+
+\begin_layout Standard
+At this moment, we do not fully develop the subsystems with two level of
+ simulation: model level and system level.
+ We expect the results would be:
+\end_layout
+
+\begin_layout Itemize
+A comprehensive checking of model's consistency and safety via model simulation:
+ The results will tell us which model is not conformed with requirements
+ that we proposed and which model is non-safety model that can lead to hazards.
+\end_layout
+
+\begin_layout Itemize
+A comprehensive checking of subsystem's intergrity and performance: It can
+ describe in detail the time and space cost of each function/module and
+ the problem in communication between module.
+\end_layout
+
+\end_body
+\end_document
