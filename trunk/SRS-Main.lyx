@@ -57,7 +57,7 @@ Team 2: Hojun Jaygarl, Andrew Denner, Nam Pham
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="4">
+<lyxtabular version="3" rows="13" columns="4">
 <features>
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -482,7 +482,7 @@ Reference
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -491,11 +491,49 @@ Reference
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 12/14/08
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hojun Jaygarl, Nam Pham, Andrew Denner
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Motivation/Conclusion
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.51
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/15/08
 \end_layout
 
 \end_inset
@@ -513,7 +551,7 @@ Hojun Jaygarl, Nam Pham, Andrew Denner
 \begin_inset Text
 
 \begin_layout Plain Layout
-Motivation/Conclusion
+Sec 1.4 removed
 \end_layout
 
 \end_inset
