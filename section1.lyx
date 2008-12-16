@@ -1,8 +1,9 @@
-#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
-\lyxformat 276
+#LyX 1.6.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
 \begin_document
 \begin_header
 \textclass article
+\use_default_options false
 \language english
 \inputencoding auto
 \font_roman default
@@ -13,8 +14,10 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \paperfontsize default
+\use_hyperref false
 \papersize default
 \use_geometry false
 \use_amsmath 1
@@ -78,33 +81,33 @@ Definitions, acronyms, abbreviations
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="2">
 <features>
-<column alignment="center" valignment="top" leftline="true" width="0">
-<column alignment="left" valignment="top" leftline="true" rightline="true" width="4in">
-<row topline="true" bottomline="true">
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="4in">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Term
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Description
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Smart Home (SH)
 \end_layout
 
@@ -113,18 +116,18 @@ Smart Home (SH)
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Home Automation system that provides Comfort, Convenience and Safety
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Notification System
 \end_layout
 
@@ -133,7 +136,7 @@ Notification System
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A combination of software and hardware that provides a means of delivering
  a message to a set of recipients.
 \end_layout
@@ -141,11 +144,11 @@ A combination of software and hardware that provides a means of delivering
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Calendering System
 \end_layout
 
@@ -154,18 +157,18 @@ Calendering System
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A software that helps people to manage and plan schedules
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 NCS
 \end_layout
 
@@ -174,18 +177,18 @@ NCS
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Notification and calendering System
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 ADLs
 \end_layout
 
@@ -194,18 +197,18 @@ ADLs
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Active Daily Lives
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 SRS
 \end_layout
 
@@ -214,27 +217,27 @@ SRS
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Software Requirement Specification Document
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true" bottomline="true">
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 RFID
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Radio Frequency Identification Device
 \end_layout
 
@@ -246,14 +249,6 @@ Radio Frequency Identification Device
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-References
-\end_layout
-
-\begin_layout Standard
-ADD ME LATER
 \end_layout
 
 \begin_layout Subsection
