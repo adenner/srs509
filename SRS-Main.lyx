@@ -1,8 +1,9 @@
-#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
-\lyxformat 276
+#LyX 1.6.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
 \begin_document
 \begin_header
 \textclass article
+\use_default_options false
 \language english
 \inputencoding auto
 \font_roman default
@@ -13,9 +14,11 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \paperfontsize default
 \spacing onehalf
+\use_hyperref false
 \papersize letterpaper
 \use_geometry true
 \use_amsmath 1
@@ -54,55 +57,55 @@ Team 2: Hojun Jaygarl, Andrew Denner, Nam Pham
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="4">
+<lyxtabular version="3" rows="12" columns="4">
 <features>
-<column alignment="center" valignment="top" leftline="true" width="0">
-<column alignment="center" valignment="top" leftline="true" width="0">
-<column alignment="center" valignment="top" leftline="true" width="0">
-<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
-<row topline="true" bottomline="true">
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Version
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Date
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Author
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Change
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 0.1
 \end_layout
 
@@ -111,7 +114,7 @@ Change
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 12/02/08
 \end_layout
 
@@ -120,7 +123,7 @@ Change
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Andrew Denner
 \end_layout
 
@@ -129,18 +132,18 @@ Andrew Denner
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Initial Version
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 0.11
 \end_layout
 
@@ -149,7 +152,7 @@ Initial Version
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 12/03/08
 \end_layout
 
@@ -158,7 +161,7 @@ Initial Version
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hojun Jaygarl, Nam Pham, Andrew Denner
 \end_layout
 
@@ -167,18 +170,18 @@ Hojun Jaygarl, Nam Pham, Andrew Denner
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Section 2 Added
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 0.2
 \end_layout
 
@@ -187,7 +190,7 @@ Section 2 Added
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 12/04/08
 \end_layout
 
@@ -196,7 +199,7 @@ Section 2 Added
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hojun Jaygarl, Nam Pham, Andrew Denner
 \end_layout
 
@@ -205,18 +208,18 @@ Hojun Jaygarl, Nam Pham, Andrew Denner
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Sequence Diagrams
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 0.21
 \end_layout
 
@@ -225,7 +228,7 @@ Sequence Diagrams
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 12/04/08
 \end_layout
 
@@ -234,7 +237,7 @@ Sequence Diagrams
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hojun Jaygarl, Nam Pham, Andrew Denner
 \end_layout
 
@@ -243,18 +246,18 @@ Hojun Jaygarl, Nam Pham, Andrew Denner
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Section 3 Added
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 0.22
 \end_layout
 
@@ -263,7 +266,7 @@ Section 3 Added
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 12/05/08
 \end_layout
 
@@ -272,8 +275,8 @@ Section 3 Added
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-Hojun Jaygar, Nam Pham, Andrew Denner
+\begin_layout Plain Layout
+Hojun Jaygarl, Nam Pham, Andrew Denner
 \end_layout
 
 \end_inset
@@ -281,18 +284,18 @@ Hojun Jaygar, Nam Pham, Andrew Denner
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Use Case diagrams
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 0.23
 \end_layout
 
@@ -301,7 +304,7 @@ Use Case diagrams
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 12/06/08
 \end_layout
 
@@ -310,8 +313,8 @@ Use Case diagrams
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-Hojun Jaygar, Nam Pham, Andrew Denner
+\begin_layout Plain Layout
+Hojun Jaygarl, Nam Pham, Andrew Denner
 \end_layout
 
 \end_inset
@@ -319,18 +322,18 @@ Hojun Jaygar, Nam Pham, Andrew Denner
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Class diagrams
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 0.3
 \end_layout
 
@@ -339,7 +342,7 @@ Class diagrams
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 12/07/08
 \end_layout
 
@@ -348,8 +351,8 @@ Class diagrams
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-Hojun Jaygar, Nam Pham, Andrew Denner
+\begin_layout Plain Layout
+Hojun Jaygarl, Nam Pham, Andrew Denner
 \end_layout
 
 \end_inset
@@ -357,18 +360,18 @@ Hojun Jaygar, Nam Pham, Andrew Denner
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Appendix
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 0.31
 \end_layout
 
@@ -377,7 +380,7 @@ Appendix
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 12/08/08
 \end_layout
 
@@ -386,8 +389,8 @@ Appendix
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-Hojun Jaygar, Nam Pham, Andrew Denner
+\begin_layout Plain Layout
+Hojun Jaygarl, Nam Pham, Andrew Denner
 \end_layout
 
 \end_inset
@@ -395,18 +398,18 @@ Hojun Jaygar, Nam Pham, Andrew Denner
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Definitions
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 0.32
 \end_layout
 
@@ -415,7 +418,7 @@ Definitions
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 12/09/08
 \end_layout
 
@@ -424,8 +427,8 @@ Definitions
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-Hojun Jaygar, Nam Pham, Andrew Denner
+\begin_layout Plain Layout
+Hojun Jaygarl, Nam Pham, Andrew Denner
 \end_layout
 
 \end_inset
@@ -433,19 +436,19 @@ Hojun Jaygar, Nam Pham, Andrew Denner
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Fixing gramatical errors
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row topline="true" bottomline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
+\begin_layout Plain Layout
+0.4
 \end_layout
 
 \end_inset
@@ -453,8 +456,8 @@ Fixing gramatical errors
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
+\begin_layout Plain Layout
+12/10/08
 \end_layout
 
 \end_inset
@@ -462,8 +465,8 @@ Fixing gramatical errors
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
+\begin_layout Plain Layout
+Hojun Jaygarl, Nam Pham, Andrew Denner
 \end_layout
 
 \end_inset
@@ -471,8 +474,46 @@ Fixing gramatical errors
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
+Reference
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/14/08
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hojun Jaygarl, Nam Pham, Andrew Denner
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Motivation/Conclusion
 \end_layout
 
 \end_inset
@@ -483,12 +524,15 @@ Fixing gramatical errors
 \end_inset
 
 
-\newpage
+\begin_inset Newpage newpage
+\end_inset
+
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset LatexCommand tableofcontents
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
 
 \end_inset
 
@@ -496,14 +540,16 @@ Fixing gramatical errors
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
 
-\newpage
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Include \include{section1.lyx}
-preview false
+\begin_inset CommandInset include
+LatexCommand include
+filename "section1.lyx"
 
 \end_inset
 
@@ -511,8 +557,9 @@ preview false
 \end_layout
 
 \begin_layout Standard
-\begin_inset Include \include{section2.lyx}
-preview false
+\begin_inset CommandInset include
+LatexCommand include
+filename "section2.lyx"
 
 \end_inset
 
@@ -520,8 +567,9 @@ preview false
 \end_layout
 
 \begin_layout Standard
-\begin_inset Include \include{section3.lyx}
-preview false
+\begin_inset CommandInset include
+LatexCommand include
+filename "section3.lyx"
 
 \end_inset
 
@@ -529,8 +577,9 @@ preview false
 \end_layout
 
 \begin_layout Standard
-\begin_inset Include \include{Appendix.lyx}
-preview false
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendix.lyx"
 
 \end_inset
 
@@ -538,8 +587,9 @@ preview false
 \end_layout
 
 \begin_layout Standard
-\begin_inset Include \include{ref.lyx}
-preview false
+\begin_inset CommandInset include
+LatexCommand include
+filename "ref.lyx"
 
 \end_inset
 
